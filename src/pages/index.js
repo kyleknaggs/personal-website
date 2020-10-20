@@ -1,5 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export default function Home() {
-  return <div>Kyle's first commit!</div>
+  return (
+    <div>
+      <h1>Home</h1>
+      <Link to="/online-ordering-platform">Online Ordering Platform</Link>
+    </div>
+  );
 }
