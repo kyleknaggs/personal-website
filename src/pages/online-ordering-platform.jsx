@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Layout from '../components/layout';
 
 export default function OnlineOrderingPlatform() {
   return (
-    <div>
+    <Layout>
       <h1>Online Ordering Platform</h1>
       <Link to="/">Home</Link>
-    </div>
+    </Layout>
   );
 }
