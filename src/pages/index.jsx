@@ -8,7 +8,6 @@ const StyledH1 = styled.h1`
 `;
 
 export default function Home() {
-  // Placeholder comment that enable experiment with remote repo
   return (
     <Layout>
       <StyledH1>Home</StyledH1>
