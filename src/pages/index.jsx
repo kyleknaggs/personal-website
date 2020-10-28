@@ -16,11 +16,20 @@ const StyledDiv = styled.div`
   }
 `;
 
+const StyledH1 = styled.h1`
+  font-size: 64px;
+  @media screen and (max-width: 1080px) {
+    font-size: 36px;
+  }
+`;
+
 export default function Home() {
+  const heroText = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
+
   return (
     <Layout>
       <StyledDiv>
-        <h1>Home</h1>
+        <StyledH1>{heroText}</StyledH1>
         <Link to="/online-ordering-platform">Online Ordering Platform</Link>
       </StyledDiv>
     </Layout>
