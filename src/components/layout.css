@@ -4,3 +4,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  --menu-height: 170px;
+}
+
+@font-face {
+  font-family: "Gill Sans Nova Light";
+  src: url("../../fonts/GillSansNova-Light.woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova SemiBold";
+  src: url("../../fonts/GillSansNova-SemiBold.woff");
+}
+
+p, a, li, h1, h2 {
+  font-family: "Gill Sans Nova Light", "Gill Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+p, li, h1, h2 {
+  color: hsl(0, 0%, 20%);
+}
