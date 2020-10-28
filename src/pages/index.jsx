@@ -5,7 +5,6 @@ import { HREF } from '../utility/constants';
 import Layout from '../components/layout';
 
 const StyledMain = styled.main`
-  background: lightgrey;
   min-height: calc(100vh - var(--menu-height));
   padding-right: 9vw;
   padding-bottom: 9vw;
@@ -31,11 +30,11 @@ const StyledH1 = styled.h1`
   font-size: 64px;
 
   @media screen and (max-width: 640px) {
-    width: 100%;
+    font-size: 36px;
   }
 
   @media screen and (max-width: 1080px) {
-    font-size: 36px;
+    width: 100%;
   }
 `;
 
