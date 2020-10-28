@@ -46,6 +46,7 @@ const StyledResumeLink = styled(StyledLink)`
   height: 65px;
   background: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
+  font-family: Gill Sans Nova SemiBold;
   text-transform: uppercase;
   text-decoration: none;
 `;
