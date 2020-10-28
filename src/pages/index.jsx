@@ -25,24 +25,30 @@ const StyledH1 = styled.h1`
 `;
 
 export default function Home() {
-  const heroText = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
-  const keySkills = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
+  const HERO_TEXT = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
+  const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
   const { ONLINE_ORDERING_PLATFORM, FIREFOX_DEBUGGER, RESUME } = HREF;
+
+  const body = (
+    <span>
+      <p>
+        Selected Work:&nbsp;
+        <Link to={ONLINE_ORDERING_PLATFORM}>
+          Online Ordering Platform for the largest mattress manufacturer in the Caribbean
+        </Link>
+        &nbsp;and an&nbsp;
+        <Link to={FIREFOX_DEBUGGER}>Open Source Contributions to the Firefox Debugger</Link>
+        .
+      </p>
+      <p>{KEY_SKILLS_TEXT}</p>
+    </span>
+  );
 
   return (
     <Layout>
       <StyledDiv>
-        <StyledH1>{heroText}</StyledH1>
-        <p>
-          Selected Work:&nbsp;
-          <Link to={ONLINE_ORDERING_PLATFORM}>
-            Online Ordering Platform for the largest mattress manufacturer in the Caribbean
-          </Link>
-          &nbsp;and an&nbsp;
-          <Link to={FIREFOX_DEBUGGER}>Open Source Contributions to the Firefox Debugger</Link>
-          .
-        </p>
-        <p>{keySkills}</p>
+        <StyledH1>{HERO_TEXT}</StyledH1>
+        {body}
         <Link to={RESUME}>View Resume</Link>
       </StyledDiv>
     </Layout>
