@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { HREF } from '../utility/constants';
+import HomeLink from './HomeLink';
 import BodyLink from './BodyLink';
 import './Layout.css';
 
@@ -22,7 +23,7 @@ export default function Layout({ children }) {
     <div>
       <StyledHeader>
         <div>
-          <BodyLink to={INDEX}>Kyle Knaggs</BodyLink>
+          <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>
         </div>
         <div>
           <BodyLink to={LINKEDIN}>LinkedIn</BodyLink>
