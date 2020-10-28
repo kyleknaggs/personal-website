@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import BodyLink from './bodylink';
 import { HREF } from '../utility/constants';
 import './layout.css';
 
@@ -22,11 +22,11 @@ export default function Layout({ children }) {
     <div>
       <StyledHeader>
         <div>
-          <Link href={INDEX}>Kyle Knaggs</Link>
+          <BodyLink to={INDEX}>Kyle Knaggs</BodyLink>
         </div>
         <div>
-          <Link href={LINKEDIN}>LinkedIn</Link>
-          <Link href={GITHUB}>GitHub</Link>
+          <BodyLink to={LINKEDIN}>LinkedIn</BodyLink>
+          <BodyLink to={GITHUB}>GitHub</BodyLink>
         </div>
       </StyledHeader>
       {children}

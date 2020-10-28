@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import { HREF } from '../utility/constants';
 import Layout from '../components/layout';
+import BodyLink from '../components/bodylink';
+import ButtonLink from '../components/buttonlink';
 
 const StyledMain = styled.main`
   min-height: calc(100vh - var(--menu-height));
@@ -38,23 +39,6 @@ const StyledH1 = styled.h1`
   }
 `;
 
-const StyledLink = styled(Link)`
-  color: hsl(0, 0%, 20%);
-`;
-
-const StyledResumeLink = styled(StyledLink)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 195px;
-  height: 65px;
-  background: hsl(0, 0%, 20%);
-  color: hsl(0, 0%, 100%);
-  font-family: Gill Sans Nova SemiBold;
-  text-transform: uppercase;
-  text-decoration: none;
-`;
-
 export default function Home() {
   const HERO_TEXT = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
   const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
@@ -64,13 +48,13 @@ export default function Home() {
     <span>
       <p>
         Selected Work:&nbsp;
-        <StyledLink to={ONLINE_ORDERING_PLATFORM}>
+        <BodyLink to={ONLINE_ORDERING_PLATFORM}>
           Online Ordering Platform for the largest mattress manufacturer in the Caribbean
-        </StyledLink>
+        </BodyLink>
         &nbsp;and an&nbsp;
-        <StyledLink to={FIREFOX_DEBUGGER}>
+        <BodyLink to={FIREFOX_DEBUGGER}>
           Open Source Contributions to the Firefox Debugger
-        </StyledLink>
+        </BodyLink>
         .
       </p>
       <p>{KEY_SKILLS_TEXT}</p>
@@ -86,7 +70,7 @@ export default function Home() {
             {body}
           </StyledRow>
           <StyledRow>
-            <StyledResumeLink to={RESUME}>View Resume</StyledResumeLink>
+            <ButtonLink to={RESUME}>View Resume</ButtonLink>
           </StyledRow>
         </StyledDiv>
       </StyledMain>
