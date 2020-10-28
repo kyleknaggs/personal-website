@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { HREF } from '../utility/constants';
 import HomeLink from './HomeLink';
-import BodyLink from './BodyLink';
+import SocialLink from './SocialLink';
+import { HREF } from '../utility/constants';
 import './Layout.css';
 
 const StyledHeader = styled.header`
@@ -16,8 +16,12 @@ const StyledHeader = styled.header`
   background-color: lightgrey;
 `;
 
+const StyledDiv = styled.div`
+  display: flex;
+`;
+
 export default function Layout({ children }) {
-  const { INDEX, LINKEDIN, GITHUB } = HREF;
+  const { INDEX } = HREF;
 
   return (
     <div>
@@ -25,10 +29,10 @@ export default function Layout({ children }) {
         <div>
           <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>
         </div>
-        <div>
-          <BodyLink to={LINKEDIN}>LinkedIn</BodyLink>
-          <BodyLink to={GITHUB}>GitHub</BodyLink>
-        </div>
+        <StyledDiv>
+          <SocialLink site="LinkedIn" />
+          <SocialLink site="GitHub" />
+        </StyledDiv>
       </StyledHeader>
       {children}
     </div>
