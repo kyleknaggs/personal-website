@@ -34,6 +34,17 @@ const StyledH1 = styled.h1`
   }
 `;
 
+const StyledResumeLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 65px;
+  background: hsl(0, 0%, 20%);
+  text-transform: uppercase;
+  text-decoration: none;
+`;
+
 export default function Home() {
   const HERO_TEXT = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
   const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
@@ -60,7 +71,7 @@ export default function Home() {
         <StyledDiv>
           <StyledH1>{HERO_TEXT}</StyledH1>
           {body}
-          <Link to={RESUME}>View Resume</Link>
+          <StyledResumeLink to={RESUME}>View Resume</StyledResumeLink>
         </StyledDiv>
       </StyledMain>
     </Layout>
