@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import BodyLink from './bodylink';
 import { HREF } from '../utility/constants';
-import './layout.css';
+import BodyLink from './BodyLink';
+import './Layout.css';
 
 const StyledHeader = styled.header`
   display: flex;
