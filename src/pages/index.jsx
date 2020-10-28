@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { HREF } from '../utility/constants';
 import Layout from '../components/layout';
 
-const StyledDiv = styled.div`
+const StyledMain = styled.main`
   background: lightgrey;
   min-height: calc(100vh - var(--menu-height));
   padding-right: 9vw;
@@ -17,8 +17,18 @@ const StyledDiv = styled.div`
   }
 `;
 
+const StyledDiv = styled.div`
+  padding: 6vw 1.5vw;
+`;
+
 const StyledH1 = styled.h1`
+  width: 87.5%;
   font-size: 64px;
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 1080px) {
     font-size: 36px;
   }
@@ -46,11 +56,13 @@ export default function Home() {
 
   return (
     <Layout>
-      <StyledDiv>
-        <StyledH1>{HERO_TEXT}</StyledH1>
-        {body}
-        <Link to={RESUME}>View Resume</Link>
-      </StyledDiv>
+      <StyledMain>
+        <StyledDiv>
+          <StyledH1>{HERO_TEXT}</StyledH1>
+          {body}
+          <Link to={RESUME}>View Resume</Link>
+        </StyledDiv>
+      </StyledMain>
     </Layout>
   );
 }
