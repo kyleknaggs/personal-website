@@ -21,6 +21,11 @@ const StyledDiv = styled.div`
   padding: 6vw 1.5vw;
 `;
 
+const StyledRow = styled.div`
+  padding-top: 17px;
+  padding-bottom: 17px;
+`;
+
 const StyledH1 = styled.h1`
   width: 87.5%;
   font-size: 64px;
@@ -78,8 +83,12 @@ export default function Home() {
       <StyledMain>
         <StyledDiv>
           <StyledH1>{HERO_TEXT}</StyledH1>
-          {body}
-          <StyledResumeLink to={RESUME}>View Resume</StyledResumeLink>
+          <StyledRow>
+            {body}
+          </StyledRow>
+          <StyledRow>
+            <StyledResumeLink to={RESUME}>View Resume</StyledResumeLink>
+          </StyledRow>
         </StyledDiv>
       </StyledMain>
     </Layout>
