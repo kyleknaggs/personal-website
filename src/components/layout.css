@@ -3,6 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* CSS Custom Property or "Variable" definitions */
+}
+
+body {
   --menu-height: 170px;
+}
+
+@font-face {
+  font-family: "Gill Sans Nova Light";
+  src: url("../../fonts/GillSansNova-Light.woff");
+}
+
+p, a, h1, h2 {
+  font-family: "Gill Sans Nova Light", "Gill Sans", Arial, Helvetica, sans-serif;
 }
