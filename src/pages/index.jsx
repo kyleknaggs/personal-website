@@ -34,13 +34,18 @@ const StyledH1 = styled.h1`
   }
 `;
 
-const StyledResumeLink = styled(Link)`
+const StyledLink = styled(Link)`
+  color: hsl(0, 0%, 20%);
+`;
+
+const StyledResumeLink = styled(StyledLink)`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 195px;
   height: 65px;
   background: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   text-decoration: none;
 `;
@@ -54,11 +59,13 @@ export default function Home() {
     <span>
       <p>
         Selected Work:&nbsp;
-        <Link to={ONLINE_ORDERING_PLATFORM}>
+        <StyledLink to={ONLINE_ORDERING_PLATFORM}>
           Online Ordering Platform for the largest mattress manufacturer in the Caribbean
-        </Link>
+        </StyledLink>
         &nbsp;and an&nbsp;
-        <Link to={FIREFOX_DEBUGGER}>Open Source Contributions to the Firefox Debugger</Link>
+        <StyledLink to={FIREFOX_DEBUGGER}>
+          Open Source Contributions to the Firefox Debugger
+        </StyledLink>
         .
       </p>
       <p>{KEY_SKILLS_TEXT}</p>

@@ -19,6 +19,6 @@ p, a, li, h1, h2 {
   font-weight: 300;
 }
 
-p, a, a:visited, li, h1, h1 {
+p, li, h1, h2 {
   color: hsl(0, 0%, 20%);
 }
