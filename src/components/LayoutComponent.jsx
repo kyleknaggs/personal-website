@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import HomeLink from './homeLink';
-import SocialLink from './socialLink';
+import HomeLink from './HomeLinkComponent';
+import SocialLink from './SocialLinkComponent';
 import { HREF } from '../utility/constants';
-import './layout.css';
+import './LayoutComponent.css';
 
 const StyledHeader = styled.header`
   display: flex;
