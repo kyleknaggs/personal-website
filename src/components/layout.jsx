@@ -10,10 +10,12 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--menu-height);
   padding-left: 4vw;
   padding-right: 4vw;
-  background-color: lightgrey;
+  height: var(--menu-height-lg);
+  @media screen and (max-width: 1024px) {
+    height: var(--menu-height-sm);
+  }
 `;
 
 const StyledDiv = styled.div`

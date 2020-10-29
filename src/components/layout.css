@@ -6,7 +6,8 @@
 }
 
 body {
-  --menu-height: 170px;
+  --menu-height-lg: 170px;
+  --menu-height-sm: 100px;
 }
 
 @font-face {

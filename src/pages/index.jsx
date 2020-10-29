@@ -6,7 +6,7 @@ import BodyLink from '../components/BodyLink';
 import ButtonLink from '../components/ButtonLink';
 
 const StyledMain = styled.main`
-  min-height: calc(100vh - var(--menu-height));
+  min-height: calc(100vh - var(--menu-height-lg));
   padding-right: 9vw;
   padding-bottom: 9vw;
   padding-left: 9vw;
@@ -14,6 +14,7 @@ const StyledMain = styled.main`
     padding-right: 13.5vw;
     padding-bottom: 13.5vw;
     padding-left: 13.5vw;
+    min-height: calc(100vh - var(--menu-height-sm));
   }
 `;
 
