@@ -1,17 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import './layout.css';
+import HomeLink from './HomeLink';
+import SocialLink from './SocialLink';
+import { HREF } from '../utility/constants';
+import './Layout.css';
 
 const StyledHeader = styled.header`
-  height: var(--menu-height);
-  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  height: var(--menu-height-lg);
+  @media screen and (max-width: 1024px) {
+    height: var(--menu-height-sm);
+  }
+`;
+
+const StyledDiv = styled.div`
+  display: flex;
 `;
 
 export default function Layout({ children }) {
+  const { INDEX } = HREF;
+
   return (
     <div>
-      <StyledHeader />
+      <StyledHeader>
+        <div>
+          <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>
+        </div>
+        <StyledDiv>
+          <SocialLink site="LinkedIn" />
+          <SocialLink site="GitHub" />
+        </StyledDiv>
+      </StyledHeader>
       {children}
     </div>
   );
