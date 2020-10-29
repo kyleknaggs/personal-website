@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import HomeLink from './HomeLink';
 import SocialLink from './SocialLink';
 import { HREF } from '../utility/constants';
-import './Layout.css';
+import './layout.css';
 
 const StyledHeader = styled.header`
   display: flex;

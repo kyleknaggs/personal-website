@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HREF } from '../utility/constants';
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import BodyLink from '../components/BodyLink';
 import ButtonLink from '../components/ButtonLink';
 
