@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HREF } from '../utility/constants';
-import Layout from '../components/LayoutComponent';
-import BodyLink from '../components/BodyLinkComponent';
-import ButtonLink from '../components/ButtonLinkComponent';
+import Layout from '../components/Layout';
+import BodyLink from '../components/BodyLink';
+import ButtonLink from '../components/ButtonLink';
 
 const StyledMain = styled.main`
   min-height: calc(100vh - var(--menu-height-lg));
