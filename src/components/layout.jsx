@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import HomeLink from './HomeLink';
-import SocialLink from './SocialLink';
+import HomeLink from './homeLink';
+import SocialLink from './socialLink';
 import { HREF } from '../utility/constants';
 import './layout.css';
 
