@@ -53,7 +53,7 @@ export default function Home() {
           Online Ordering Platform for the largest mattress manufacturer in the Caribbean
         </BodyLink>
         &nbsp;and an&nbsp;
-        <BodyLink to={FIREFOX_DEBUGGER}>
+        <BodyLink to={FIREFOX_DEBUGGER} external>
           Open Source Contributions to the Firefox Debugger
         </BodyLink>
         .
