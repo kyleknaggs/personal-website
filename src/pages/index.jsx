@@ -13,6 +13,9 @@ const StyledMain = styled.main`
     padding-right: 13.5vw;
     padding-bottom: 13.5vw;
     padding-left: 13.5vw;
+    min-height: calc(100vh - var(--menu-height-md));
+  }
+  @media screen and (max-width: 640px) {
     min-height: calc(100vh - var(--menu-height-sm));
   }
 `;

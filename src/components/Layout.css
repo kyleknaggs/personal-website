@@ -7,7 +7,8 @@
 
 body {
   --menu-height-lg: 170px;
-  --menu-height-sm: 100px;
+  --menu-height-md: 80px;
+  --menu-height-sm: 50px;
 }
 
 @font-face {
