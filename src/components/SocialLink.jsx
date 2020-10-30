@@ -2,10 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { ImGithub, ImLinkedin2 } from 'react-icons/im';
-import { Link } from 'gatsby';
 import { HREF } from '../utility/constants';
 
-const StyledLink = styled(Link)`
+const StyledA = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +18,16 @@ export default function SocialLink({ site }) {
 
   if (site === 'GitHub') {
     return (
-      <StyledLink to={GITHUB}>
+      <StyledA href={GITHUB} target="_blank" rel="noopener noreferrer">
         <ImGithub />
-      </StyledLink>
+      </StyledA>
     );
   }
 
   return (
-    <StyledLink to={LINKEDIN}>
+    <StyledA href={LINKEDIN} target="_blank" rel="noopener noreferrer">
       <ImLinkedin2 />
-    </StyledLink>
+    </StyledA>
   );
 }
 
