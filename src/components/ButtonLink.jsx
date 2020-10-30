@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
 
-const StyledLink = styled(Link)`
+const StyledA = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,9 +17,9 @@ const StyledLink = styled(Link)`
 
 export default function ButtonLink({ children, to }) {
   return (
-    <StyledLink to={to}>
+    <StyledA href={to} target="_blank" rel="noopener noreferrer">
       {children}
-    </StyledLink>
+    </StyledA>
   );
 }
 
