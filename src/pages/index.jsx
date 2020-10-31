@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { HREF } from '../utility/constants';
 import Layout from '../components/Layout';
-import BodyLink from '../components/BodyLink';
+import HomeText from '../components/HomeText';
 import ButtonLink from '../components/ButtonLink';
 
 const StyledMain = styled.main`
@@ -40,33 +40,9 @@ const StyledH1 = styled.h1`
   }
 `;
 
-const StyledP = styled.p`
-  @media screen and (max-width: 1080px) {
-    padding-bottom: 17px;
-  }
-`;
-
 export default function Home() {
   const HERO_TEXT = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
-  const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
-  const { ONLINE_ORDERING_PLATFORM, FIREFOX_DEBUGGER, RESUME } = HREF;
-
-  const body = (
-    <span>
-      <StyledP>
-        Selected Work:&nbsp;
-        <BodyLink to={ONLINE_ORDERING_PLATFORM}>
-          Online Ordering Platform for the largest mattress manufacturer in the Caribbean
-        </BodyLink>
-        &nbsp;and an&nbsp;
-        <BodyLink to={FIREFOX_DEBUGGER} external>
-          Open Source Contributions to the Firefox Debugger
-        </BodyLink>
-        .
-      </StyledP>
-      <StyledP>{KEY_SKILLS_TEXT}</StyledP>
-    </span>
-  );
+  const { RESUME } = HREF;
 
   return (
     <Layout>
@@ -74,7 +50,7 @@ export default function Home() {
         <StyledDiv>
           <StyledH1>{HERO_TEXT}</StyledH1>
           <StyledRow>
-            {body}
+            <HomeText />
           </StyledRow>
           <StyledRow>
             <ButtonLink to={RESUME}>View Resume</ButtonLink>
