@@ -7,9 +7,11 @@ const StyledLink = styled(Link)`
   color: hsl(0, 0%, 20%);
   font-size: 28px;
   text-decoration: none;
+
   :hover {
     color: #000;
   }
+
   @media screen and (max-width: 640px) {
     font-size: 22px;
   }

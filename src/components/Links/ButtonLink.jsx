@@ -14,6 +14,7 @@ const StyledA = styled.a`
   letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  
   :hover {
     background: #000;
   }

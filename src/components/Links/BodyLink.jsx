@@ -9,6 +9,7 @@ const StyledA = styled.a`
 
 const StyledLink = styled(Link)`
   color: hsl(0, 0%, 20%);
+  
   :hover {
     color: #000;
   }

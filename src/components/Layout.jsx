@@ -13,9 +13,11 @@ const StyledHeader = styled.header`
   padding-left: 4vw;
   padding-right: 4vw;
   height: var(--menu-height-lg);
+
   @media screen and (max-width: 1024px) {
     height: var(--menu-height-md);
   }
+
   @media screen and (max-width: 640px) {
     height: var(--menu-height-sm);
   }

@@ -11,6 +11,7 @@ const StyledA = styled.a`
   color: hsl(0, 0%, 20%);
   height: 32px;
   width: 32px;
+  
   :hover {
     color: #000;
   }
