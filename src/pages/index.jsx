@@ -10,9 +10,7 @@ const StyledMain = styled.main`
   padding-right: 9vw;
   padding-left: 9vw;
   @media screen and (max-width: 1024px) {
-    padding-right: 13.5vw;
-    padding-bottom: 13.5vw;
-    padding-left: 13.5vw;
+    padding: 13.5vw;
     min-height: calc(100vh - var(--menu-height-md));
   }
   @media screen and (max-width: 640px) {
@@ -42,6 +40,12 @@ const StyledH1 = styled.h1`
   }
 `;
 
+const StyledP = styled.p`
+  @media screen and (max-width: 1080px) {
+    padding-bottom: 17px;
+  }
+`;
+
 export default function Home() {
   const HERO_TEXT = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
   const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
@@ -49,7 +53,7 @@ export default function Home() {
 
   const body = (
     <span>
-      <p>
+      <StyledP>
         Selected Work:&nbsp;
         <BodyLink to={ONLINE_ORDERING_PLATFORM}>
           Online Ordering Platform for the largest mattress manufacturer in the Caribbean
@@ -59,8 +63,8 @@ export default function Home() {
           Open Source Contributions to the Firefox Debugger
         </BodyLink>
         .
-      </p>
-      <p>{KEY_SKILLS_TEXT}</p>
+      </StyledP>
+      <StyledP>{KEY_SKILLS_TEXT}</StyledP>
     </span>
   );
 
