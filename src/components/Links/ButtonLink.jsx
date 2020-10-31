@@ -11,8 +11,12 @@ const StyledA = styled.a`
   background: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
   font-family: Gill Sans Nova SemiBold;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
+  :hover {
+    background: #000;
+  }
 `;
 
 export default function ButtonLink({ children, to }) {
