@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HREF } from '../utility/constants';
-import BodyLink from './BodyLink';
+import BodyLink from './Links/BodyLink';
 
 const StyledP = styled.p`
   @media screen and (max-width: 1080px) {

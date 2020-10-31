@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { ImGithub, ImLinkedin2 } from 'react-icons/im';
-import { HREF } from '../utility/constants';
+import { HREF } from '../../utility/constants';
 
 const StyledA = styled.a`
   display: flex;
