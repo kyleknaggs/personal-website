@@ -2,22 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { HREF } from '../utility/constants';
 import Layout from '../components/Layout';
+import Main from '../components/Main';
 import HomeText from '../components/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
-
-const StyledMain = styled.main`
-  min-height: calc(100vh - var(--menu-height-lg));
-  padding: 0vw 10.5vw;
-
-  @media screen and (max-width: 1024px) {
-    min-height: calc(100vh - var(--menu-height-md));
-    padding 0vw 15vw;
-  }
-
-  @media screen and (max-width: 640px) {
-    min-height: calc(100vh - var(--menu-height-sm));
-  }
-`;
 
 const StyledDiv = styled.div`
   padding: 6vw 0vw;
@@ -50,7 +37,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <StyledMain>
+      <Main>
         <StyledDiv>
           <StyledH1>{HERO_TEXT}</StyledH1>
           <StyledRow>
@@ -60,7 +47,7 @@ export default function Home() {
             <ButtonLink to={RESUME}>View Resume</ButtonLink>
           </StyledRow>
         </StyledDiv>
-      </StyledMain>
+      </Main>
     </Layout>
   );
 }
