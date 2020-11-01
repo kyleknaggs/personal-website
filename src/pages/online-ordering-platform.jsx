@@ -2,24 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
+import Image from '../components/Image';
 import { IMG } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
   @media screen and (max-width: 1024px) {
     padding-top: 11vw;
-  }
-`;
-
-const StyledSpacerDiv = styled.div`
-  width: 100%;
-  height: 60px;
-
-  @media screen and (max-width: 1024px) {
-    height: 85px;
-  }
-
-  @media screen and (max-width: 640px) {
-    height: 0px;
   }
 `;
 
@@ -67,34 +55,28 @@ export default function OnlineOrderingPlatform() {
             alt=""
           />
         </StyledImageWrapperDiv>
-        <StyledSpacerDiv />
-        <StyledImg
+        <Image
           src={ORDER_ENTRY_PROCESS_OLD}
           alt=""
         />
-        <StyledSpacerDiv />
-        <StyledImg
+        <Image
           src={ORDER_ENTRY_PROCESS_NEW}
           alt=""
         />
-        <StyledSpacerDiv />
-        <StyledImg
+        <Image
           src={FREEDOM_ORDER_ENTRY}
           alt=""
         />
-        <StyledSpacerDiv />
-        <StyledImg
+        <Image
           src={WORKING_ORDER_ANALYSIS}
           alt=""
         />
-        <StyledSpacerDiv />
         {/* TODO: Add sequence of 4 precedent study images */}
-        <StyledImg
+        <Image
           src={PRECEDENT_SITE_STUDY_DIAGRAM}
           alt=""
         />
-        <StyledSpacerDiv />
-        <StyledImg
+        <Image
           src={HOME_PAGE_MOCKUP}
           alt=""
         />
