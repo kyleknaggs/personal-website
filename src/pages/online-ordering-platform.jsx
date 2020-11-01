@@ -4,9 +4,22 @@ import Layout from '../components/Layout';
 import Main from '../components/Main';
 import { IMG } from '../utility/constants';
 
-const StyledDiv = styled.div`
+const StyledImageWrapperDiv = styled.div`
   @media screen and (max-width: 1024px) {
-    padding 11vw 0vw;
+    padding-top: 11vw;
+  }
+`;
+
+const StyledSpacerDiv = styled.div`
+  width: 100%;
+  height: 60px;
+
+  @media screen and (max-width: 1024px) {
+    height: 85px;
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 0px;
   }
 `;
 
@@ -48,33 +61,39 @@ export default function OnlineOrderingPlatform() {
   return (
     <Layout>
       <Main>
-        <StyledDiv>
+        <StyledImageWrapperDiv>
           <StyledImg
             src={AFL_ONLINE_VIDEO}
             alt=""
           />
-        </StyledDiv>
+        </StyledImageWrapperDiv>
+        <StyledSpacerDiv />
         <StyledImg
           src={ORDER_ENTRY_PROCESS_OLD}
           alt=""
         />
+        <StyledSpacerDiv />
         <StyledImg
           src={ORDER_ENTRY_PROCESS_NEW}
           alt=""
         />
+        <StyledSpacerDiv />
         <StyledImg
           src={FREEDOM_ORDER_ENTRY}
           alt=""
         />
+        <StyledSpacerDiv />
         <StyledImg
           src={WORKING_ORDER_ANALYSIS}
           alt=""
         />
+        <StyledSpacerDiv />
         {/* TODO: Add sequence of 4 precedent study images */}
         <StyledImg
           src={PRECEDENT_SITE_STUDY_DIAGRAM}
           alt=""
         />
+        <StyledSpacerDiv />
         <StyledImg
           src={HOME_PAGE_MOCKUP}
           alt=""
