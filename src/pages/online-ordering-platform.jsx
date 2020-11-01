@@ -29,6 +29,14 @@ const StyledH1 = styled.h1`
   }
 `;
 
+const StyledUl = styled.ul`
+  padding-left: 40px;
+`;
+
+const StyledLi = styled.li`
+  padding: 8px 0px;
+`;
+
 /*
   TODO: Markup for iframe used to load in Vimeo video
   <iframe
@@ -60,6 +68,12 @@ export default function OnlineOrderingPlatform() {
     ONLINE_ORDERING_PLATFORM_HERO,
     AFL_ONLINE_VIDEO_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_WRITE_UP,
+    NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION,
+    NOTABLE_CONTRIBUTIONS_LIST_FIRST,
+    NOTABLE_CONTRIBUTIONS_LIST_SECOND,
+    NOTABLE_CONTRIBUTIONS_LIST_THIRD,
+    NOTABLE_CONTRIBUTIONS_LIST_FOURTH,
+    NOTABLE_CONTRIBUTIONS_LIST_FIFTH,
     ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
     ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
     FREEDOM_ORDER_ENTRY_DESCRIPTION,
@@ -81,6 +95,16 @@ export default function OnlineOrderingPlatform() {
         <Spacer />
         <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
         <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
+        <Spacer />
+        <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
+        <StyledUl>
+          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</StyledLi>
+          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</StyledLi>
+          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</StyledLi>
+          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</StyledLi>
+          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</StyledLi>
+        </StyledUl>
+        <Spacer />
         <Image
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_OLD}
