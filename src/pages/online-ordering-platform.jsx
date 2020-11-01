@@ -30,11 +30,17 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledUl = styled.ul`
-  padding-left: 40px;
+  padding-left: 30px;
+  list-style: none;
 `;
 
 const StyledLi = styled.li`
+  display: flex;
   padding: 8px 0px;
+  ::before {
+    content: "•";
+    padding-right: 10px;
+  }
 `;
 
 /*
@@ -98,13 +104,22 @@ export default function OnlineOrderingPlatform() {
         <Spacer />
         <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
         <StyledUl>
-          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</StyledLi>
-          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</StyledLi>
-          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</StyledLi>
-          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</StyledLi>
-          <StyledLi>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</StyledLi>
+          <StyledLi>
+            <p>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</p>
+          </StyledLi>
+          <StyledLi>
+            <p>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</p>
+          </StyledLi>
+          <StyledLi>
+            <p>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</p>
+          </StyledLi>
+          <StyledLi>
+            <p>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</p>
+          </StyledLi>
+          <StyledLi>
+            <p>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</p>
+          </StyledLi>
         </StyledUl>
-        <Spacer />
         <Image
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_OLD}
