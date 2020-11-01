@@ -7,12 +7,15 @@ import ButtonLink from '../components/Links/ButtonLink';
 
 const StyledMain = styled.main`
   min-height: calc(100vh - var(--menu-height-lg));
-  padding-right: 9vw;
   padding-left: 9vw;
+  padding-right: 9vw;
 
   @media screen and (max-width: 1024px) {
     min-height: calc(100vh - var(--menu-height-md));
-    padding: 13.5vw;
+    padding-left: 13.5vw;
+    padding-right: 13.5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
   }
 
   @media screen and (max-width: 640px) {
