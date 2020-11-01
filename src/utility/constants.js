@@ -19,6 +19,7 @@ const IMG = {
 
 const TEXT = {
   INDEX_HERO: 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.',
+  AFL_ONLINE_VIDEO_DESCRIPTION: 'Screencast of typical user flow in Application. All prices have been blurred for confidentiality purposes.',
   ORDER_ENTRY_PROCESS_OLD_DESCRIPTION: 'Diagram of the order entry process before the development of a web application:',
   ORDER_ENTRY_PROCESS_NEW_DESCRIPTION: 'Diagram of the order entry process after the development of a web application:',
   FREEDOM_ORDER_ENTRY_DESCRIPTION: 'Diagram of the user interface of Freedom, the software used by staff when entering orders manually:',

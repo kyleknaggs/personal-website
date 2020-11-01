@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import Image from '../components/Image';
+import Paragraph from '../components/Paragraph';
 import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
@@ -46,6 +47,7 @@ export default function OnlineOrderingPlatform() {
     HOME_PAGE_MOCKUP,
   } = IMG;
   const {
+    AFL_ONLINE_VIDEO_DESCRIPTION,
     ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
     ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
     FREEDOM_ORDER_ENTRY_DESCRIPTION,
@@ -63,6 +65,7 @@ export default function OnlineOrderingPlatform() {
             alt=""
           />
         </StyledImageWrapperDiv>
+        <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
         <Image
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_OLD}
