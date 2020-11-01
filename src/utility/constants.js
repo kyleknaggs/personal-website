@@ -17,4 +17,8 @@ const IMG = {
   HOME_PAGE_MOCKUP: 'homePageMockup.png',
 };
 
-export { HREF, IMG };
+const TEXT = {
+  INDEX_HERO: 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.',
+};
+
+export { HREF, IMG, TEXT };

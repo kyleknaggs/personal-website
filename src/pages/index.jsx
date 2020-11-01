@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HREF } from '../utility/constants';
+import { HREF, TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import HomeText from '../components/HomeText';
@@ -32,14 +32,14 @@ const StyledH1 = styled.h1`
 `;
 
 export default function Home() {
-  const HERO_TEXT = 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.';
   const { RESUME } = HREF;
+  const { INDEX_HERO } = TEXT;
 
   return (
     <Layout>
       <Main>
         <StyledDiv>
-          <StyledH1>{HERO_TEXT}</StyledH1>
+          <StyledH1>{INDEX_HERO}</StyledH1>
           <StyledRow>
             <HomeText />
           </StyledRow>
