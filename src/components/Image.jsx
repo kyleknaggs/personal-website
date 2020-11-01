@@ -28,14 +28,12 @@ const StyledDiv = styled.div`
   padding: 17px 0;
 `;
 
-export default function Image({ src, alt }) {
-  const PLACEHOLDER_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis lacus nec facilisis luctus.';
-
+export default function Image({ description, src, alt }) {
   return (
     <span>
       <StyledSpacerDiv />
       <StyledDiv>
-        <p>{PLACEHOLDER_TEXT}</p>
+        <p>{description}</p>
       </StyledDiv>
       <StyledImg
         src={src}
@@ -46,6 +44,7 @@ export default function Image({ src, alt }) {
 }
 
 Image.propTypes = {
+  description: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
 };

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import Image from '../components/Image';
-import { IMG } from '../utility/constants';
+import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
   @media screen and (max-width: 1024px) {
@@ -45,6 +45,14 @@ export default function OnlineOrderingPlatform() {
     PRECEDENT_SITE_STUDY_DIAGRAM,
     HOME_PAGE_MOCKUP,
   } = IMG;
+  const {
+    ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
+    ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
+    FREEDOM_ORDER_ENTRY_DESCRIPTION,
+    WORKING_ORDER_ANALYSIS_DESCRIPTION,
+    PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION,
+    HOME_PAGE_MOCKUP_DESCRIPTION,
+  } = TEXT;
 
   return (
     <Layout>
@@ -56,27 +64,33 @@ export default function OnlineOrderingPlatform() {
           />
         </StyledImageWrapperDiv>
         <Image
+          description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_OLD}
           alt=""
         />
         <Image
+          description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_NEW}
           alt=""
         />
         <Image
+          description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
           src={FREEDOM_ORDER_ENTRY}
           alt=""
         />
         <Image
+          description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
           src={WORKING_ORDER_ANALYSIS}
           alt=""
         />
         {/* TODO: Add sequence of 4 precedent study images */}
         <Image
+          description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
           src={PRECEDENT_SITE_STUDY_DIAGRAM}
           alt=""
         />
         <Image
+          description={HOME_PAGE_MOCKUP_DESCRIPTION}
           src={HOME_PAGE_MOCKUP}
           alt=""
         />
