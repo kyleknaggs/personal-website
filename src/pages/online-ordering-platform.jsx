@@ -20,6 +20,15 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
+const StyledH1 = styled.h1`
+  font-family: 'Gill Sans Nova Bold';
+  font-size: 32px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
+`;
+
 /*
   TODO: Markup for iframe used to load in Vimeo video
   <iframe
@@ -48,6 +57,7 @@ export default function OnlineOrderingPlatform() {
     HOME_PAGE_MOCKUP,
   } = IMG;
   const {
+    ONLINE_ORDERING_PLATFORM_HERO,
     AFL_ONLINE_VIDEO_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_WRITE_UP,
     ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
@@ -69,6 +79,7 @@ export default function OnlineOrderingPlatform() {
         </StyledImageWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
         <Spacer />
+        <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
         <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
         <Image
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
