@@ -4,6 +4,12 @@ import Layout from '../components/Layout';
 import Main from '../components/Main';
 import { IMG } from '../utility/constants';
 
+const StyledDiv = styled.div`
+  @media screen and (max-width: 1024px) {
+    padding 11vw 0vw;
+  }
+`;
+
 // Because the image file is larger than the max width of the parent element
 // Setting width to 100% ensures that it never extends beyond the width
 //  of its parent element
@@ -34,10 +40,12 @@ export default function OnlineOrderingPlatform() {
   return (
     <Layout>
       <Main>
-        <StyledImg
-          src={AFL_ONLINE_VIDEO}
-          alt=""
-        />
+        <StyledDiv>
+          <StyledImg
+            src={AFL_ONLINE_VIDEO}
+            alt=""
+          />
+        </StyledDiv>
       </Main>
     </Layout>
   );
