@@ -9,6 +9,12 @@ const HREF = {
 
 const IMG = {
   AFL_ONLINE_VIDEO: '/aflOnlineVideo.png',
+  ORDER_ENTRY_PROCESS_OLD: 'orderEntryProcessOld.png',
+  ORDER_ENTRY_PROCESS_NEW: 'orderEntryProcessNew.png',
+  FREEDOM_ORDER_ENTRY: 'freedomOrderEntry.png',
+  WORKING_ORDER_ANALYSIS: 'workingOrderAnalysis.png',
+  PRECEDENT_SITE_STUDY_DIAGRAM: 'predecentSiteStudyDiagram.png',
+  HOME_PAGE_MOCKUP: 'homePageMockup.png',
 };
 
 export { HREF, IMG };

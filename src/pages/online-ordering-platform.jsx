@@ -35,7 +35,15 @@ const StyledImg = styled.img`
 */
 
 export default function OnlineOrderingPlatform() {
-  const { AFL_ONLINE_VIDEO } = IMG;
+  const {
+    AFL_ONLINE_VIDEO,
+    ORDER_ENTRY_PROCESS_OLD,
+    ORDER_ENTRY_PROCESS_NEW,
+    FREEDOM_ORDER_ENTRY,
+    WORKING_ORDER_ANALYSIS,
+    PRECEDENT_SITE_STUDY_DIAGRAM,
+    HOME_PAGE_MOCKUP,
+  } = IMG;
 
   return (
     <Layout>
@@ -46,6 +54,32 @@ export default function OnlineOrderingPlatform() {
             alt=""
           />
         </StyledDiv>
+        <StyledImg
+          src={ORDER_ENTRY_PROCESS_OLD}
+          alt=""
+        />
+        <StyledImg
+          src={ORDER_ENTRY_PROCESS_NEW}
+          alt=""
+        />
+        <StyledImg
+          src={FREEDOM_ORDER_ENTRY}
+          alt=""
+        />
+        <StyledImg
+          src={WORKING_ORDER_ANALYSIS}
+          alt=""
+        />
+        {/* TODO: Add sequence of 4 precedent study images */}
+        <StyledImg
+          src={PRECEDENT_SITE_STUDY_DIAGRAM}
+          alt=""
+        />
+        <StyledImg
+          src={HOME_PAGE_MOCKUP}
+          alt=""
+        />
+        {/* TODO: Add sequence of 3 screenshots on mobile devices */}
       </Main>
     </Layout>
   );
