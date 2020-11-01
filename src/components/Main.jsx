@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledMain = styled.main`
+  max-width: 1920px;
   min-height: calc(100vh - var(--menu-height-lg));
   padding: 0vw 10.5vw;
 

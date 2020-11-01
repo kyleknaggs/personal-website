@@ -23,8 +23,12 @@ const StyledHeader = styled.header`
   }
 `;
 
-const StyledDiv = styled.div`
+const StyledFlexDiv = styled.div`
   display: flex;
+`;
+
+const StyledJustifyContentDiv = styled(StyledFlexDiv)`
+  justify-content: center;
 `;
 
 export default function Layout({ children }) {
@@ -36,12 +40,14 @@ export default function Layout({ children }) {
         <div>
           <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>
         </div>
-        <StyledDiv>
+        <StyledFlexDiv>
           <SocialLink site="LinkedIn" />
           <SocialLink site="GitHub" />
-        </StyledDiv>
+        </StyledFlexDiv>
       </StyledHeader>
-      {children}
+      <StyledJustifyContentDiv>
+        {children}
+      </StyledJustifyContentDiv>
     </div>
   );
 }
