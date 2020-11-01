@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
-import Image from '../components/Image';
 import Paragraph from '../components/Paragraph';
+import Spacer from '../components/Spacer';
+import Image from '../components/Image';
 import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
@@ -67,6 +68,7 @@ export default function OnlineOrderingPlatform() {
           />
         </StyledImageWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
+        <Spacer />
         <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
         <Image
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
