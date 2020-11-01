@@ -22,10 +22,21 @@ const StyledSpacerDiv = styled.div`
   }
 `;
 
+const StyledDiv = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 17px 0;
+`;
+
 export default function Image({ src, alt }) {
+  const PLACEHOLDER_TEXT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis lacus nec facilisis luctus.';
+
   return (
     <span>
       <StyledSpacerDiv />
+      <StyledDiv>
+        <p>{PLACEHOLDER_TEXT}</p>
+      </StyledDiv>
       <StyledImg
         src={src}
         alt={alt}
