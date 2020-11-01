@@ -7,15 +7,11 @@ import ButtonLink from '../components/Links/ButtonLink';
 
 const StyledMain = styled.main`
   min-height: calc(100vh - var(--menu-height-lg));
-  padding-left: 9vw;
-  padding-right: 9vw;
+  padding: 0vw 10.5vw;
 
   @media screen and (max-width: 1024px) {
     min-height: calc(100vh - var(--menu-height-md));
-    padding-left: 13.5vw;
-    padding-right: 13.5vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding 0vw 15vw;
   }
 
   @media screen and (max-width: 640px) {
@@ -24,12 +20,15 @@ const StyledMain = styled.main`
 `;
 
 const StyledDiv = styled.div`
-  padding: 6vw 1.5vw;
+  padding: 6vw 0vw;
+
+  @media screen and (max-width: 1024px) {
+    padding 11vw 0vw;
+  }
 `;
 
 const StyledRow = styled.div`
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 17px 0px;
 `;
 
 const StyledH1 = styled.h1`
