@@ -48,6 +48,7 @@ export default function OnlineOrderingPlatform() {
   } = IMG;
   const {
     AFL_ONLINE_VIDEO_DESCRIPTION,
+    ONLINE_ORDERING_PLATFORM_WRITE_UP,
     ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
     ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
     FREEDOM_ORDER_ENTRY_DESCRIPTION,
@@ -66,6 +67,7 @@ export default function OnlineOrderingPlatform() {
           />
         </StyledImageWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
+        <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
         <Image
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_OLD}
