@@ -13,6 +13,10 @@ const IMG = {
   ORDER_ENTRY_PROCESS_NEW: 'orderEntryProcessNew.png',
   FREEDOM_ORDER_ENTRY: 'freedomOrderEntry.png',
   WORKING_ORDER_ANALYSIS: 'workingOrderAnalysis.png',
+  AMAZON_PRECEDENT: '/amazon.png',
+  CASPER_PRECEDENT: '/casper.png',
+  ALLY_PRECEDENT: '/ally.png',
+  TRADE_GECKO_PRECEDENT: '/tradeGecko.png',
   PRECEDENT_SITE_STUDY_DIAGRAM: 'predecentSiteStudyDiagram.png',
   HOME_PAGE_MOCKUP: 'homePageMockup.png',
 };
@@ -31,6 +35,7 @@ const TEXT = {
   ORDER_ENTRY_PROCESS_OLD_DESCRIPTION: 'Diagram of the order entry process before the development of a web application:',
   ORDER_ENTRY_PROCESS_NEW_DESCRIPTION: 'Diagram of the order entry process after the development of a web application:',
   FREEDOM_ORDER_ENTRY_DESCRIPTION: 'Diagram of the user interface of Freedom, the software used by staff when entering orders manually:',
+  PRECEDENT_IMAGE_DESCRIPTION: 'A selection of the interfaces that were evaluated and used as inspiration when designing the application’s UI:',
   WORKING_ORDER_ANALYSIS_DESCRIPTION: 'Analysis of a single day of orders:',
   PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION: 'A sample of the analysis done when evaluating an existing user interface:',
   HOME_PAGE_MOCKUP_DESCRIPTION: 'A high-fidelity mockup of the home page of the application:',

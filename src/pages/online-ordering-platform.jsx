@@ -5,6 +5,7 @@ import Main from '../components/Main';
 import Paragraph from '../components/Paragraph';
 import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
+import ImageRow from '../components/ImageRow';
 import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
@@ -84,6 +85,7 @@ export default function OnlineOrderingPlatform() {
     ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
     FREEDOM_ORDER_ENTRY_DESCRIPTION,
     WORKING_ORDER_ANALYSIS_DESCRIPTION,
+    PRECEDENT_IMAGE_DESCRIPTION,
     PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION,
     HOME_PAGE_MOCKUP_DESCRIPTION,
   } = TEXT;
@@ -140,7 +142,9 @@ export default function OnlineOrderingPlatform() {
           src={WORKING_ORDER_ANALYSIS}
           alt=""
         />
-        {/* TODO: Add sequence of 4 precedent study images */}
+        <ImageRow
+          description={PRECEDENT_IMAGE_DESCRIPTION}
+        />
         <ImageFullWidth
           description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
           src={PRECEDENT_SITE_STUDY_DIAGRAM}
