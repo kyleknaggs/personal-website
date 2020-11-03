@@ -13,10 +13,11 @@ const StyledWrapperDiv = styled.div`
 
 const StyledDiv = styled.div`
   width: 25%;
-  padding: 17px;
+  padding: 17px 17px;
 
   @media screen and (max-width: 640px) {
     width: 100%;
+    padding: 17px 0px;
   }
 `;
 
