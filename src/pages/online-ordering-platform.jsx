@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import Main from '../components/Main';
 import Paragraph from '../components/Paragraph';
 import Spacer from '../components/Spacer';
-import Image from '../components/Image';
+import ImageFullWidth from '../components/ImageFullWidth';
 import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
@@ -120,33 +120,33 @@ export default function OnlineOrderingPlatform() {
             <p>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</p>
           </StyledLi>
         </StyledUl>
-        <Image
+        <ImageFullWidth
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_OLD}
           alt=""
         />
-        <Image
+        <ImageFullWidth
           description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
           src={ORDER_ENTRY_PROCESS_NEW}
           alt=""
         />
-        <Image
+        <ImageFullWidth
           description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
           src={FREEDOM_ORDER_ENTRY}
           alt=""
         />
-        <Image
+        <ImageFullWidth
           description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
           src={WORKING_ORDER_ANALYSIS}
           alt=""
         />
         {/* TODO: Add sequence of 4 precedent study images */}
-        <Image
+        <ImageFullWidth
           description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
           src={PRECEDENT_SITE_STUDY_DIAGRAM}
           alt=""
         />
-        <Image
+        <ImageFullWidth
           description={HOME_PAGE_MOCKUP_DESCRIPTION}
           src={HOME_PAGE_MOCKUP}
           alt=""
