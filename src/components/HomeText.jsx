@@ -11,6 +11,7 @@ const StyledP = styled.p`
 
 export default function BodyText() {
   const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
+  const ONLINE_ORDERING_PLATFORM_TEXT = 'Online Ordering Platform for the largest mattress manufacturer in the Caribbean';
   const { ONLINE_ORDERING_PLATFORM, FIREFOX_DEBUGGER } = HREF;
 
   return (
@@ -18,7 +19,7 @@ export default function BodyText() {
       <StyledP>
         Selected Work:&nbsp;
         <BodyLink to={ONLINE_ORDERING_PLATFORM}>
-          Online Ordering Platform for the largest mattress manufacturer in the Caribbean
+          {ONLINE_ORDERING_PLATFORM_TEXT}
         </BodyLink>
         &nbsp;and an&nbsp;
         <BodyLink to={FIREFOX_DEBUGGER} external>
