@@ -5,7 +5,7 @@ import Main from '../components/Main';
 import Paragraph from '../components/Paragraph';
 import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
-import ImageRow from '../components/ImageRow';
+import PrecedentImageRow from '../components/PrecedentImageRow';
 import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
@@ -142,7 +142,7 @@ export default function OnlineOrderingPlatform() {
           src={WORKING_ORDER_ANALYSIS}
           alt=""
         />
-        <ImageRow
+        <PrecedentImageRow
           description={PRECEDENT_IMAGE_DESCRIPTION}
         />
         <ImageFullWidth

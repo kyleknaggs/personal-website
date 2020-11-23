@@ -21,7 +21,7 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
-export default function ImageRow({ description }) {
+export default function PrecedentImageRow({ description }) {
   const {
     AMAZON_PRECEDENT,
     CASPER_PRECEDENT,
@@ -56,6 +56,6 @@ export default function ImageRow({ description }) {
   );
 }
 
-ImageRow.propTypes = {
+PrecedentImageRow.propTypes = {
   description: PropTypes.string.isRequired,
 };
