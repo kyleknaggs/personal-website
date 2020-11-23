@@ -6,18 +6,14 @@ import Paragraph from './Paragraph';
 import { IMG } from '../utility/constants';
 
 const StyledWrapperDiv = styled.div`
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-`;
-
-const StyledDiv = styled.div`
-  width: 25%;
-  padding: 17px 17px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 34px;
+  margin-top: 10px; /* Keeps visual spacing of text to image consistent */
   @media screen and (max-width: 640px) {
-    width: 100%;
-    padding: 17px 0px;
+    grid-template-columns: 1fr;
+    row-gap: 34px;
   }
 `;
 
@@ -39,30 +35,22 @@ export default function ImageRow({ description }) {
         text={description}
       />
       <StyledWrapperDiv>
-        <StyledDiv>
-          <StyledImg
-            src={AMAZON_PRECEDENT}
-            alt=""
-          />
-        </StyledDiv>
-        <StyledDiv>
-          <StyledImg
-            src={CASPER_PRECEDENT}
-            alt=""
-          />
-        </StyledDiv>
-        <StyledDiv>
-          <StyledImg
-            src={ALLY_PRECEDENT}
-            alt=""
-          />
-        </StyledDiv>
-        <StyledDiv>
-          <StyledImg
-            src={TRADE_GECKO_PRECEDENT}
-            alt=""
-          />
-        </StyledDiv>
+        <StyledImg
+          src={AMAZON_PRECEDENT}
+          alt=""
+        />
+        <StyledImg
+          src={CASPER_PRECEDENT}
+          alt=""
+        />
+        <StyledImg
+          src={ALLY_PRECEDENT}
+          alt=""
+        />
+        <StyledImg
+          src={TRADE_GECKO_PRECEDENT}
+          alt=""
+        />
       </StyledWrapperDiv>
     </span>
   );
