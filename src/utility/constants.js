@@ -19,6 +19,9 @@ const IMG = {
   TRADE_GECKO_PRECEDENT: '/tradeGecko.png',
   PRECEDENT_SITE_STUDY_DIAGRAM: 'predecentSiteStudyDiagram.png',
   HOME_PAGE_MOCKUP: 'homePageMockup.png',
+  MOBILE_ORDER_HISTORY: 'mobile_orderHistory.png',
+  MOBILE_MATTRESS_AND_FOUNDATION: 'mobile_mattressAndFoundation.png',
+  MOBILE_CUSTOM_REQUEST: 'mobile_customRequest.png',
 };
 
 const TEXT = {

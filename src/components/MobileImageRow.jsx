@@ -8,7 +8,7 @@ import { IMG } from '../utility/constants';
 const StyledWrapperDiv = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 34px;
   margin-top: 10px; /* Keeps visual spacing of text to image consistent */
   @media screen and (max-width: 640px) {
@@ -24,10 +24,9 @@ const StyledImg = styled.img`
 // TODO: Replace placeholder content with MobileImageRow content
 export default function MobileImageRow({ description }) {
   const {
-    AMAZON_PRECEDENT,
-    CASPER_PRECEDENT,
-    ALLY_PRECEDENT,
-    TRADE_GECKO_PRECEDENT,
+    MOBILE_ORDER_HISTORY,
+    MOBILE_MATTRESS_AND_FOUNDATION,
+    MOBILE_CUSTOM_REQUEST,
   } = IMG;
   return (
     <span>
@@ -37,19 +36,15 @@ export default function MobileImageRow({ description }) {
       />
       <StyledWrapperDiv>
         <StyledImg
-          src={AMAZON_PRECEDENT}
+          src={MOBILE_ORDER_HISTORY}
           alt=""
         />
         <StyledImg
-          src={CASPER_PRECEDENT}
+          src={MOBILE_MATTRESS_AND_FOUNDATION}
           alt=""
         />
         <StyledImg
-          src={ALLY_PRECEDENT}
-          alt=""
-        />
-        <StyledImg
-          src={TRADE_GECKO_PRECEDENT}
+          src={MOBILE_CUSTOM_REQUEST}
           alt=""
         />
       </StyledWrapperDiv>
