@@ -25,7 +25,7 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
-export default function ImageFullWidth({ description }) {
+export default function ImageRow({ description }) {
   const {
     AMAZON_PRECEDENT,
     CASPER_PRECEDENT,
@@ -68,6 +68,6 @@ export default function ImageFullWidth({ description }) {
   );
 }
 
-ImageFullWidth.propTypes = {
+ImageRow.propTypes = {
   description: PropTypes.string.isRequired,
 };
