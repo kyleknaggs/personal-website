@@ -39,6 +39,7 @@ const TEXT = {
   WORKING_ORDER_ANALYSIS_DESCRIPTION: 'Analysis of a single day of orders:',
   PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION: 'A sample of the analysis done when evaluating an existing user interface:',
   HOME_PAGE_MOCKUP_DESCRIPTION: 'A high-fidelity mockup of the home page of the application:',
+  MOBILE_IMAGE_DESCRIPTION: 'Screenshots of the application on a mobile device simulated using Chrome’s Developer Tools:',
 };
 
 export { HREF, IMG, TEXT };

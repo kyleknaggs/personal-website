@@ -6,6 +6,7 @@ import Paragraph from '../components/Paragraph';
 import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
 import PrecedentImageRow from '../components/PrecedentImageRow';
+import MobileImageRow from '../components/MobileImageRow';
 import { IMG, TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
@@ -88,6 +89,7 @@ export default function OnlineOrderingPlatform() {
     PRECEDENT_IMAGE_DESCRIPTION,
     PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION,
     HOME_PAGE_MOCKUP_DESCRIPTION,
+    MOBILE_IMAGE_DESCRIPTION,
   } = TEXT;
 
   return (
@@ -155,7 +157,9 @@ export default function OnlineOrderingPlatform() {
           src={HOME_PAGE_MOCKUP}
           alt=""
         />
-        {/* TODO: Add sequence of 3 screenshots on mobile devices */}
+        <MobileImageRow
+          description={MOBILE_IMAGE_DESCRIPTION}
+        />
       </Main>
     </Layout>
   );
