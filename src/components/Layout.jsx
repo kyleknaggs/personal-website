@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import HomeLink from './Links/HomeLink';
@@ -35,7 +35,7 @@ export default function Layout({ children }) {
   const { INDEX } = HREF;
 
   return (
-    <div>
+    <Fragment>
       <StyledHeader>
         <div>
           <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>
@@ -48,7 +48,7 @@ export default function Layout({ children }) {
       <StyledJustifyContentDiv>
         {children}
       </StyledJustifyContentDiv>
-    </div>
+    </Fragment>
   );
 }
 
