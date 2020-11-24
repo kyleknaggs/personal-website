@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from './Spacer';
 import Paragraph from './Paragraph';
-import { IMG } from '../utility/constants';
+import AmazonPrecedentImg from '../assets/amazonPrecedent.png';
+import AllyPrecedentImg from '../assets/allyPrecedent.png';
+import CasperPrecedentImg from '../assets/casperPrecedent.png';
+import TradeGeckoPrecedentImg from '../assets/tradeGeckoPrecedent.png';
 
 const StyledWrapperDiv = styled.div`
   width: 100%;
@@ -22,12 +25,6 @@ const StyledImg = styled.img`
 `;
 
 export default function PrecedentImageRow({ description }) {
-  const {
-    AMAZON_PRECEDENT,
-    CASPER_PRECEDENT,
-    ALLY_PRECEDENT,
-    TRADE_GECKO_PRECEDENT,
-  } = IMG;
   return (
     <span>
       <Spacer />
@@ -36,19 +33,19 @@ export default function PrecedentImageRow({ description }) {
       />
       <StyledWrapperDiv>
         <StyledImg
-          src={AMAZON_PRECEDENT}
+          src={AmazonPrecedentImg}
           alt=""
         />
         <StyledImg
-          src={CASPER_PRECEDENT}
+          src={CasperPrecedentImg}
           alt=""
         />
         <StyledImg
-          src={ALLY_PRECEDENT}
+          src={AllyPrecedentImg}
           alt=""
         />
         <StyledImg
-          src={TRADE_GECKO_PRECEDENT}
+          src={TradeGeckoPrecedentImg}
           alt=""
         />
       </StyledWrapperDiv>
