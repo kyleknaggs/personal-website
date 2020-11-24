@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HREF, TEXT } from '../utility/constants';
+import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import HomeText from '../components/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
+import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
 
 const StyledDiv = styled.div`
   padding: 6vw 0vw;
@@ -32,7 +33,6 @@ const StyledH1 = styled.h1`
 `;
 
 export default function Home() {
-  const { RESUME } = HREF;
   const { INDEX_HERO } = TEXT;
 
   return (
@@ -44,7 +44,7 @@ export default function Home() {
             <HomeText />
           </StyledRow>
           <StyledRow>
-            <ButtonLink to={RESUME}>View Resume</ButtonLink>
+            <ButtonLink to={KyleKnaggsResumePdf}>View Resume</ButtonLink>
           </StyledRow>
         </StyledDiv>
       </Main>
