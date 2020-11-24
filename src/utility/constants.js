@@ -12,9 +12,6 @@ const IMG = {
   CASPER_PRECEDENT: '/casper.png',
   ALLY_PRECEDENT: '/ally.png',
   TRADE_GECKO_PRECEDENT: '/tradeGecko.png',
-  MOBILE_ORDER_HISTORY: 'mobile_orderHistory.png',
-  MOBILE_MATTRESS_AND_FOUNDATION: 'mobile_mattressAndFoundation.png',
-  MOBILE_CUSTOM_REQUEST: 'mobile_customRequest.png',
 };
 
 const TEXT = {

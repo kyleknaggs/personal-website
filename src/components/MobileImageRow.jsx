@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from './Spacer';
 import Paragraph from './Paragraph';
-import { IMG } from '../utility/constants';
+import MobileOrderHistoryImg from '../assets/mobileOrderHistory.png';
+import MobileMattressAndFoundationImg from '../assets/mobileMattressAndFoundation.png';
+import MobileCustomRequestImg from '../assets/mobileCustomRequest.png';
 
 const StyledWrapperDiv = styled.div`
   width: 100%;
@@ -39,13 +41,7 @@ const StyledLargeImg = styled.img`
   width: 100%;
 `;
 
-// TODO: Replace placeholder content with MobileImageRow content
 export default function MobileImageRow({ description }) {
-  const {
-    MOBILE_ORDER_HISTORY,
-    MOBILE_MATTRESS_AND_FOUNDATION,
-    MOBILE_CUSTOM_REQUEST,
-  } = IMG;
   return (
     <span>
       <Spacer />
@@ -55,17 +51,17 @@ export default function MobileImageRow({ description }) {
       <StyledWrapperDiv>
         <StyledSmallImgWrapper>
           <StyledSmallImg
-            src={MOBILE_ORDER_HISTORY}
+            src={MobileOrderHistoryImg}
             alt=""
           />
         </StyledSmallImgWrapper>
         <StyledLargeImg
-          src={MOBILE_MATTRESS_AND_FOUNDATION}
+          src={MobileMattressAndFoundationImg}
           alt=""
         />
         <StyledSmallImgWrapper>
           <StyledSmallImg
-            src={MOBILE_CUSTOM_REQUEST}
+            src={MobileCustomRequestImg}
             alt=""
           />
         </StyledSmallImgWrapper>
