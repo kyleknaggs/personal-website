@@ -17,7 +17,25 @@ const StyledWrapperDiv = styled.div`
   }
 `;
 
-const StyledImg = styled.img`
+const StyledSmallImgWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const StyledSmallImg = styled.img`
+  width: 50%;
+  height: 50%;
+  margin-top: 50px;
+  /* Preserve aspect ratio when resizing image */
+  object-fit: contain;
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+`;
+
+const StyledLargeImg = styled.img`
   width: 100%;
 `;
 
@@ -35,18 +53,22 @@ export default function MobileImageRow({ description }) {
         text={description}
       />
       <StyledWrapperDiv>
-        <StyledImg
-          src={MOBILE_ORDER_HISTORY}
-          alt=""
-        />
-        <StyledImg
+        <StyledSmallImgWrapper>
+          <StyledSmallImg
+            src={MOBILE_ORDER_HISTORY}
+            alt=""
+          />
+        </StyledSmallImgWrapper>
+        <StyledLargeImg
           src={MOBILE_MATTRESS_AND_FOUNDATION}
           alt=""
         />
-        <StyledImg
-          src={MOBILE_CUSTOM_REQUEST}
-          alt=""
-        />
+        <StyledSmallImgWrapper>
+          <StyledSmallImg
+            src={MOBILE_CUSTOM_REQUEST}
+            alt=""
+          />
+        </StyledSmallImgWrapper>
       </StyledWrapperDiv>
     </span>
   );
