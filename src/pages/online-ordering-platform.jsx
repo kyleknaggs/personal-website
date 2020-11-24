@@ -7,7 +7,14 @@ import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
 import PrecedentImageRow from '../components/PrecedentImageRow';
 import MobileImageRow from '../components/MobileImageRow';
-import { IMG, TEXT } from '../utility/constants';
+import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
+import OrderEntryProcessOldImg from '../assets/orderEntryProcessOld.png';
+import OrderEntryProcessNewImg from '../assets/orderEntryProcessNew.png';
+import FreedomOrderEntryImg from '../assets/freedomOrderEntry.png';
+import WorkingOrderAnalysisImg from '../assets/workingOrderAnalysis.png';
+import PrecedentSiteStudyDiagromImg from '../assets/precedentSiteStudyDiagram.png';
+import HomePageMockupImg from '../assets/homePageMockup.png';
+import { TEXT } from '../utility/constants';
 
 const StyledImageWrapperDiv = styled.div`
   @media screen and (max-width: 1024px) {
@@ -64,15 +71,6 @@ const StyledLi = styled.li`
 
 export default function OnlineOrderingPlatform() {
   const {
-    AFL_ONLINE_VIDEO,
-    ORDER_ENTRY_PROCESS_OLD,
-    ORDER_ENTRY_PROCESS_NEW,
-    FREEDOM_ORDER_ENTRY,
-    WORKING_ORDER_ANALYSIS,
-    PRECEDENT_SITE_STUDY_DIAGRAM,
-    HOME_PAGE_MOCKUP,
-  } = IMG;
-  const {
     ONLINE_ORDERING_PLATFORM_HERO,
     AFL_ONLINE_VIDEO_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_WRITE_UP,
@@ -97,7 +95,7 @@ export default function OnlineOrderingPlatform() {
       <Main>
         <StyledImageWrapperDiv>
           <StyledImg
-            src={AFL_ONLINE_VIDEO}
+            src={AflOnlineVideoImg}
             alt=""
           />
         </StyledImageWrapperDiv>
@@ -126,22 +124,22 @@ export default function OnlineOrderingPlatform() {
         </StyledUl>
         <ImageFullWidth
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
-          src={ORDER_ENTRY_PROCESS_OLD}
+          src={OrderEntryProcessOldImg}
           alt=""
         />
         <ImageFullWidth
           description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
-          src={ORDER_ENTRY_PROCESS_NEW}
+          src={OrderEntryProcessNewImg}
           alt=""
         />
         <ImageFullWidth
           description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
-          src={FREEDOM_ORDER_ENTRY}
+          src={FreedomOrderEntryImg}
           alt=""
         />
         <ImageFullWidth
           description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
-          src={WORKING_ORDER_ANALYSIS}
+          src={WorkingOrderAnalysisImg}
           alt=""
         />
         <PrecedentImageRow
@@ -149,12 +147,12 @@ export default function OnlineOrderingPlatform() {
         />
         <ImageFullWidth
           description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
-          src={PRECEDENT_SITE_STUDY_DIAGRAM}
+          src={PrecedentSiteStudyDiagromImg}
           alt=""
         />
         <ImageFullWidth
           description={HOME_PAGE_MOCKUP_DESCRIPTION}
-          src={HOME_PAGE_MOCKUP}
+          src={HomePageMockupImg}
           alt=""
         />
         <MobileImageRow

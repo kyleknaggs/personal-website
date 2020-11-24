@@ -8,17 +8,10 @@ const HREF = {
 };
 
 const IMG = {
-  AFL_ONLINE_VIDEO: '/aflOnlineVideo.png',
-  ORDER_ENTRY_PROCESS_OLD: 'orderEntryProcessOld.png',
-  ORDER_ENTRY_PROCESS_NEW: 'orderEntryProcessNew.png',
-  FREEDOM_ORDER_ENTRY: 'freedomOrderEntry.png',
-  WORKING_ORDER_ANALYSIS: 'workingOrderAnalysis.png',
   AMAZON_PRECEDENT: '/amazon.png',
   CASPER_PRECEDENT: '/casper.png',
   ALLY_PRECEDENT: '/ally.png',
   TRADE_GECKO_PRECEDENT: '/tradeGecko.png',
-  PRECEDENT_SITE_STUDY_DIAGRAM: 'predecentSiteStudyDiagram.png',
-  HOME_PAGE_MOCKUP: 'homePageMockup.png',
   MOBILE_ORDER_HISTORY: 'mobile_orderHistory.png',
   MOBILE_MATTRESS_AND_FOUNDATION: 'mobile_mattressAndFoundation.png',
   MOBILE_CUSTOM_REQUEST: 'mobile_customRequest.png',
