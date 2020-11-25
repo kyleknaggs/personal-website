@@ -158,6 +158,9 @@ export default function OnlineOrderingPlatform() {
         <MobileImageRow
           description={MOBILE_IMAGE_DESCRIPTION}
         />
+        <Spacer
+          visibleOnMobile
+        />
       </Main>
     </Layout>
   );

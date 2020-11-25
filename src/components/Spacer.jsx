@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledSpacerDiv = styled.div`
   width: 100%;
@@ -10,12 +11,20 @@ const StyledSpacerDiv = styled.div`
   }
 
   @media screen and (max-width: 640px) {
-    height: 0px;
+    height: ${(props) => (props.visibleOnMobile ? '85px' : '0px')}
   }
 `;
 
-export default function Spacer() {
+export default function Spacer({ visibleOnMobile }) {
   return (
-    <StyledSpacerDiv />
+    <StyledSpacerDiv visibleOnMobile={visibleOnMobile} />
   );
 }
+
+Spacer.defaultProps = {
+  visibleOnMobile: false,
+};
+
+Spacer.propTypes = {
+  visibleOnMobile: PropTypes.bool,
+};
