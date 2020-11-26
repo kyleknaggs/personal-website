@@ -7,7 +7,9 @@ import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
 import PrecedentImageRow from '../components/PrecedentImageRow';
 import MobileImageRow from '../components/MobileImageRow';
-import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
+// TODO: Add placeholder image with icon on top and when user clicks icon,
+// placeholder img is removed and video starts to play
+// import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
 import OrderEntryProcessOldImg from '../assets/orderEntryProcessOld.png';
 import OrderEntryProcessNewImg from '../assets/orderEntryProcessNew.png';
 import FreedomOrderEntryImg from '../assets/freedomOrderEntry.png';
@@ -16,17 +18,29 @@ import PrecedentSiteStudyDiagromImg from '../assets/precedentSiteStudyDiagram.pn
 import HomePageMockupImg from '../assets/homePageMockup.png';
 import { TEXT } from '../utility/constants';
 
+// Well known CSS hack: https://css-tricks.com/aspect-ratio-boxes/
+// Padding percentage values are calculated using an element's width
+// The use of padding-top with a percentage creates an image that
+// maintains a particular aspect ratio as the content resizes
 const StyledImageWrapperDiv = styled.div`
-  @media screen and (max-width: 1024px) {
-    padding-top: 11vw;
-  }
+  padding-top: 56.26%; /* Maintains 9:16 aspect ratio */
+  position: relative;
 `;
 
-// Because the image file is larger than the max width of the parent element
-// Setting width to 100% ensures that it never extends beyond the width
-//  of its parent element
+/*
+// Use as placeholder image:
 const StyledImg = styled.img`
   width: 100%;
+`;
+*/
+
+const StyledIFrame = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 `;
 
 const StyledH1 = styled.h1`
@@ -51,23 +65,6 @@ const StyledLi = styled.li`
     padding-right: 10px;
   }
 `;
-
-/*
-  TODO: Markup for iframe used to load in Vimeo video
-  <iframe
-    src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
-    width="100%"
-    height="240"
-    frameBorder="0"
-    allow="autoplay; fullscreen"
-    allowFullScreen=""
-    title="aflOnline_applicationDemo"
-    id="yui_3_17_2_1_1604168177590_76"
-    style={{
-      opacity: 1,
-    }}
-  />
-*/
 
 export default function OnlineOrderingPlatform() {
   const {
@@ -94,9 +91,16 @@ export default function OnlineOrderingPlatform() {
     <Layout>
       <Main>
         <StyledImageWrapperDiv>
-          <StyledImg
+          {/* <StyledImg
             src={AflOnlineVideoImg}
             alt=""
+          /> */}
+          <StyledIFrame
+            src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
+            title="aflOnline_applicationDemo"
+            id="yui_3_17_2_1_1606395291091_76"
+            allow="fullscreen"
+            autoplay="false"
           />
         </StyledImageWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
