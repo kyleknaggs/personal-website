@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
@@ -7,9 +7,7 @@ import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
 import PrecedentImageRow from '../components/PrecedentImageRow';
 import MobileImageRow from '../components/MobileImageRow';
-// TODO: Add placeholder image with icon on top and when user clicks icon,
-// placeholder img is removed and video starts to play
-// import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
+import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
 import OrderEntryProcessOldImg from '../assets/orderEntryProcessOld.png';
 import OrderEntryProcessNewImg from '../assets/orderEntryProcessNew.png';
 import FreedomOrderEntryImg from '../assets/freedomOrderEntry.png';
@@ -27,12 +25,19 @@ const StyledImageWrapperDiv = styled.div`
   position: relative;
 `;
 
-/*
-// Use as placeholder image:
-const StyledImg = styled.img`
+// TODO:
+// 1. Style placeholder image so that its crop matches video
+// 2. Make icon on top of placeholder image the only clickable area
+// 3. Remove title from top left of video if still present
+// 4. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
+// 5. Consolidate same placeholder img and iframe styles into single component
+const StyledPlaceholderImg = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  cursor: pointer;
 `;
-*/
 
 const StyledIFrame = styled.iframe`
   position: absolute;
@@ -86,22 +91,33 @@ export default function OnlineOrderingPlatform() {
     HOME_PAGE_MOCKUP_DESCRIPTION,
     MOBILE_IMAGE_DESCRIPTION,
   } = TEXT;
+  const [hasClickedVideo, setHasClickedVideo] = useState(false);
+
+  function handleClick() {
+    setHasClickedVideo(true);
+  }
 
   return (
     <Layout>
       <Main>
         <StyledImageWrapperDiv>
-          {/* <StyledImg
-            src={AflOnlineVideoImg}
-            alt=""
-          /> */}
-          <StyledIFrame
-            src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
-            title="aflOnline_applicationDemo"
-            id="yui_3_17_2_1_1606395291091_76"
-            allow="fullscreen"
-            autoplay="false"
-          />
+          {
+            !hasClickedVideo ? (
+              <StyledPlaceholderImg
+                src={AflOnlineVideoImg}
+                alt=""
+                onClick={handleClick}
+              />
+            ) : (
+              <StyledIFrame
+                src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
+                title="aflOnline_applicationDemo"
+                id="yui_3_17_2_1_1606395291091_76"
+                allow="fullscreen"
+                autoplay="true"
+              />
+            )
+          }
         </StyledImageWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
         <Spacer />
