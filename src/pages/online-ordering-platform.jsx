@@ -16,27 +16,47 @@ import PrecedentSiteStudyDiagromImg from '../assets/precedentSiteStudyDiagram.pn
 import HomePageMockupImg from '../assets/homePageMockup.png';
 import { TEXT } from '../utility/constants';
 
+const AbsolutePlaceholderImgWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
+
+const RelativePlaceholderImgWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ClickableArrow = styled.div`
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url(//assets.squarespace.com/universal/images-v6/damask/play-button@2x.png);
+  background-position: center;
+  background-size: contain;
+`;
+
 // Well known CSS hack: https://css-tricks.com/aspect-ratio-boxes/
 // Padding percentage values are calculated using an element's width
 // The use of padding-top with a percentage creates an image that
 // maintains a particular aspect ratio as the content resizes
-const StyledImageWrapperDiv = styled.div`
+const StyledVideoWrapperDiv = styled.div`
   padding-top: 56.26%; /* Maintains 9:16 aspect ratio */
   position: relative;
   overflow: hidden; /* Crops placeholder image which is taller than wrapper */
 `;
 
 // TODO:
-// 1. Make icon on top of placeholder image the only clickable area
-// 2. Remove title from top left of video if still present
-// 3. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
-// 4. Consolidate same placeholder img and iframe styles into single component
+// 1. Remove title from top left of video if still present
+// 2. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
+// 3. Consolidate same placeholder img and iframe styles into single component
+// 4. Replace Squarespace arrow image with your own arrow image
+// 5. Move placeholder image content into own component
 const StyledPlaceholderImg = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  cursor: pointer;
 `;
 
 const StyledIFrame = styled.iframe`
@@ -97,17 +117,27 @@ export default function OnlineOrderingPlatform() {
     setHasClickedVideo(true);
   }
 
+  const placeholderContent = (
+    <AbsolutePlaceholderImgWrapper>
+      <RelativePlaceholderImgWrapper>
+        <StyledPlaceholderImg
+          src={AflOnlineVideoImg}
+          alt=""
+        />
+        <ClickableArrow
+          onClick={handleClick}
+        />
+      </RelativePlaceholderImgWrapper>
+    </AbsolutePlaceholderImgWrapper>
+  );
+
   return (
     <Layout>
       <Main>
-        <StyledImageWrapperDiv>
+        <StyledVideoWrapperDiv>
           {
             !hasClickedVideo ? (
-              <StyledPlaceholderImg
-                src={AflOnlineVideoImg}
-                alt=""
-                onClick={handleClick}
-              />
+              placeholderContent
             ) : (
               <StyledIFrame
                 src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
@@ -118,7 +148,7 @@ export default function OnlineOrderingPlatform() {
               />
             )
           }
-        </StyledImageWrapperDiv>
+        </StyledVideoWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
         <Spacer />
         <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
