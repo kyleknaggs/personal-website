@@ -23,14 +23,14 @@ import { TEXT } from '../utility/constants';
 const StyledImageWrapperDiv = styled.div`
   padding-top: 56.26%; /* Maintains 9:16 aspect ratio */
   position: relative;
+  overflow: hidden; /* Crops placeholder image which is taller than wrapper */
 `;
 
 // TODO:
-// 1. Style placeholder image so that its crop matches video
-// 2. Make icon on top of placeholder image the only clickable area
-// 3. Remove title from top left of video if still present
-// 4. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
-// 5. Consolidate same placeholder img and iframe styles into single component
+// 1. Make icon on top of placeholder image the only clickable area
+// 2. Remove title from top left of video if still present
+// 3. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
+// 4. Consolidate same placeholder img and iframe styles into single component
 const StyledPlaceholderImg = styled.img`
   position: absolute;
   top: 0;
