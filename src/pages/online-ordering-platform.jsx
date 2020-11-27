@@ -16,17 +16,27 @@ import PrecedentSiteStudyDiagromImg from '../assets/precedentSiteStudyDiagram.pn
 import HomePageMockupImg from '../assets/homePageMockup.png';
 import { TEXT } from '../utility/constants';
 
-const AbsolutePlaceholderImgWrapper = styled.div`
+// TODO:
+// 1. Remove title from top left of video if still present
+// 2. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
+// 3. Consolidate same placeholder img and iframe styles into single component
+// 4. Replace Squarespace arrow image with your own arrow image
+// 5. Move placeholder image content into own component
+const AbsoluteWrapperDiv = styled.div`
   position: absolute;
   top: 0;
   left: 0;
 `;
 
-const RelativePlaceholderImgWrapper = styled.div`
+const RelativeWrapperDiv = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const PlaceholderImg = styled.img`
+  width: 100%;
 `;
 
 const ClickableArrow = styled.div`
@@ -39,27 +49,23 @@ const ClickableArrow = styled.div`
   background-size: contain;
 `;
 
+const VideoWrapperDiv = styled.div`
+  @media screen and (max-width: 1024px) {
+    padding-top: 11vw;
+  }
+`;
+
 // Well known CSS hack: https://css-tricks.com/aspect-ratio-boxes/
 // Padding percentage values are calculated using an element's width
 // The use of padding-top with a percentage creates an image that
 // maintains a particular aspect ratio as the content resizes
-const StyledVideoWrapperDiv = styled.div`
+const AspectRatioWrapperDiv = styled.div`
   padding-top: 56.26%; /* Maintains 9:16 aspect ratio */
   position: relative;
-  overflow: hidden; /* Crops placeholder image which is taller than wrapper */
+  overflow: hidden;
 `;
 
-// TODO:
-// 1. Remove title from top left of video if still present
-// 2. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
-// 3. Consolidate same placeholder img and iframe styles into single component
-// 4. Replace Squarespace arrow image with your own arrow image
-// 5. Move placeholder image content into own component
-const StyledPlaceholderImg = styled.img`
-  width: 100%;
-`;
-
-const StyledIFrame = styled.iframe`
+const VideoIframe = styled.iframe`
   position: absolute;
   top: 0;
   left: 0;
@@ -118,37 +124,39 @@ export default function OnlineOrderingPlatform() {
   }
 
   const placeholderContent = (
-    <AbsolutePlaceholderImgWrapper>
-      <RelativePlaceholderImgWrapper>
-        <StyledPlaceholderImg
+    <AbsoluteWrapperDiv>
+      <RelativeWrapperDiv>
+        <PlaceholderImg
           src={AflOnlineVideoImg}
           alt=""
         />
         <ClickableArrow
           onClick={handleClick}
         />
-      </RelativePlaceholderImgWrapper>
-    </AbsolutePlaceholderImgWrapper>
+      </RelativeWrapperDiv>
+    </AbsoluteWrapperDiv>
   );
 
   return (
     <Layout>
       <Main>
-        <StyledVideoWrapperDiv>
-          {
-            !hasClickedVideo ? (
-              placeholderContent
-            ) : (
-              <StyledIFrame
-                src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
-                title="aflOnline_applicationDemo"
-                id="yui_3_17_2_1_1606395291091_76"
-                allow="fullscreen"
-                autoplay="true"
-              />
-            )
-          }
-        </StyledVideoWrapperDiv>
+        <VideoWrapperDiv>
+          <AspectRatioWrapperDiv>
+            {
+              !hasClickedVideo ? (
+                placeholderContent
+              ) : (
+                <VideoIframe
+                  src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
+                  title="aflOnline_applicationDemo"
+                  id="yui_3_17_2_1_1606395291091_76"
+                  allow="fullscreen"
+                  autoplay="true"
+                />
+              )
+            }
+          </AspectRatioWrapperDiv>
+        </VideoWrapperDiv>
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
         <Spacer />
         <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
