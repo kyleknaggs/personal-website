@@ -6,7 +6,7 @@ import Paragraph from './Paragraph';
 import AmazonPrecedentImg from '../assets/amazonPrecedent.png';
 import AllyPrecedentImg from '../assets/allyPrecedent.png';
 import CasperPrecedentImg from '../assets/casperPrecedent.png';
-import TradeGeckoPrecedentImg from '../assets/tradeGeckoPrecedent.png';
+import TradeGeckoPrecedentImg from '../assets/tradeGeckoPrecedent.jpg';
 
 const StyledWrapperDiv = styled.div`
   width: 100%;
