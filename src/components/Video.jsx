@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PlayIconImg from '../assets/playIcon.png';
-import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.png';
+import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.jpg';
 
 const AbsoluteWrapperDiv = styled.div`
   position: absolute;
