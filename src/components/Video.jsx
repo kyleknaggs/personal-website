@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import PlayIconImg from '../assets/playIcon.png';
 import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
 
 // TODO:
 // 1. Remove title from top left of video if still present
 // 2. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
 // 3. Consolidate same placeholder img and iframe styles into single component
-// 4. Replace Squarespace arrow image with your own arrow image
 const AbsoluteWrapperDiv = styled.div`
   position: absolute;
   top: 0;
@@ -25,13 +25,13 @@ const PlaceholderImg = styled.img`
 `;
 
 const PlayArrowDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
   position: absolute;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background-image: url(//assets.squarespace.com/universal/images-v6/damask/play-button@2x.png);
-  background-position: center;
-  background-size: contain;
 `;
 
 const VideoWrapperDiv = styled.div`
@@ -75,7 +75,9 @@ export default function Video() {
         />
         <PlayArrowDiv
           onClick={handlePlayClick}
-        />
+        >
+          <img src={PlayIconImg} alt="" />
+        </PlayArrowDiv>
       </RelativeWrapperDiv>
     </AbsoluteWrapperDiv>
   );
