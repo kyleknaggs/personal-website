@@ -3,9 +3,6 @@ import styled from 'styled-components';
 import PlayIconImg from '../assets/playIcon.png';
 import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.png';
 
-// TODO:
-// 1. Remove title from top left of video if still present
-// 2. Consolidate same placeholder img and iframe styles into single component
 const AbsoluteWrapperDiv = styled.div`
   position: absolute;
   top: 0;
@@ -88,12 +85,14 @@ export default function Video() {
           !hasClickedPlay ? (
             placeholderContent
           ) : (
+            // The autoplay value is passed to the iframe via the allow
+            // attribute. This was done as passing this value in via
+            // autoplay="true" does not autplay the video as expected
             <VideoIframe
               src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
               title="aflOnline_applicationDemo"
               id="yui_3_17_2_1_1606395291091_76"
-              allow="fullscreen"
-              autoplay="true"
+              allow="autoplay; fullscreen"
             />
           )
         }
