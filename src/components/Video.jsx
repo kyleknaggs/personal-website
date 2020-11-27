@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PlayIconImg from '../assets/playIcon.png';
-import AflOnlineVideoImg from '../assets/aflOnlineVideo.png';
+import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.png';
 
 // TODO:
 // 1. Remove title from top left of video if still present
-// 2. Rename AflOnlineVideoImg to AflOnlinePlaceholderVideoImg
-// 3. Consolidate same placeholder img and iframe styles into single component
+// 2. Consolidate same placeholder img and iframe styles into single component
 const AbsoluteWrapperDiv = styled.div`
   position: absolute;
   top: 0;
@@ -70,7 +69,7 @@ export default function Video() {
     <AbsoluteWrapperDiv>
       <RelativeWrapperDiv>
         <PlaceholderImg
-          src={AflOnlineVideoImg}
+          src={AflOnlinePlaceholderVideoImg}
           alt=""
         />
         <PlayArrowDiv
