@@ -34,3 +34,55 @@ p, a, li, h1, h2 {
 p, li, h1, h2 {
   color: hsl(0, 0%, 20%);
 }
+
+/* Browser prefixes did not work when applied via Styled Compoents */
+/* fadeIn keyframe rule related to animations in Main */
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
