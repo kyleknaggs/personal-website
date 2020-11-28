@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from './Spacer';
 import Paragraph from './Paragraph';
-import AmazonPrecedentImg from '../assets/amazonPrecedent.png';
-import AllyPrecedentImg from '../assets/allyPrecedent.png';
-import CasperPrecedentImg from '../assets/casperPrecedent.png';
+import AmazonPrecedentImg from '../assets/amazonPrecedent.jpg';
+import AllyPrecedentImg from '../assets/allyPrecedent.jpg';
+import CasperPrecedentImg from '../assets/casperPrecedent.jpg';
 import TradeGeckoPrecedentImg from '../assets/tradeGeckoPrecedent.jpg';
 
 const StyledWrapperDiv = styled.div`
