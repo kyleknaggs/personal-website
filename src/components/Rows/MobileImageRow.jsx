@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from '../Spacer';
-import Paragraph from '../Paragraph';
+import Paragraph from '../Text/Paragraph';
 import MobileOrderHistoryImg from '../../assets/mobileOrderHistory.png';
 import MobileMattressAndFoundationImg from '../../assets/mobileMattressAndFoundation.png';
 import MobileCustomRequestImg from '../../assets/mobileCustomRequest.png';

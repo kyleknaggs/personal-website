@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import Video from '../components/Video';
-import Paragraph from '../components/Paragraph';
+import Paragraph from '../components/Text/Paragraph';
 import Spacer from '../components/Spacer';
 import ImageFullWidth from '../components/ImageFullWidth';
 import PrecedentImageRow from '../components/Rows/PrecedentImageRow';

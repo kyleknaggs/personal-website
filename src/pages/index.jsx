@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
-import H1 from '../components/H1';
+import H1 from '../components/Text/H1';
 import PaddingRow from '../components/Rows/PaddingRow';
-import HomeText from '../components/HomeText';
+import HomeText from '../components/Text/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
 
