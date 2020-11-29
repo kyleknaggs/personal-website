@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
+import H1 from '../components/H1';
 import BodyLink from '../components/Links/BodyLink';
 
 const StyledDiv = styled.div`
@@ -15,19 +16,6 @@ const StyledDiv = styled.div`
 
 const StyledRow = styled.div`
   padding: 17px 0px;
-`;
-
-const StyledH1 = styled.h1`
-  width: 87.5%;
-  font-size: 64px;
-
-  @media screen and (max-width: 640px) {
-    font-size: 36px;
-  }
-
-  @media screen and (max-width: 1080px) {
-    width: 100%;
-  }
 `;
 
 // In Gatsby the 404 page should be located at src/pages/404.js
@@ -45,7 +33,7 @@ export default function NotFound() {
     <Layout>
       <Main>
         <StyledDiv>
-          <StyledH1>{NOT_FOUND_HERO}</StyledH1>
+          <H1 text={NOT_FOUND_HERO} />
           <StyledRow>
             <p>{NOT_FOUND_DESCRIPTION}</p>
             <p>

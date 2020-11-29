@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
+import H1 from '../components/H1';
 import HomeText from '../components/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
@@ -19,19 +20,6 @@ const StyledRow = styled.div`
   padding: 17px 0px;
 `;
 
-const StyledH1 = styled.h1`
-  width: 87.5%;
-  font-size: 64px;
-
-  @media screen and (max-width: 640px) {
-    font-size: 36px;
-  }
-
-  @media screen and (max-width: 1080px) {
-    width: 100%;
-  }
-`;
-
 export default function Home() {
   const { INDEX_HERO } = TEXT;
 
@@ -39,7 +27,7 @@ export default function Home() {
     <Layout>
       <Main>
         <StyledDiv>
-          <StyledH1>{INDEX_HERO}</StyledH1>
+          <H1 text={INDEX_HERO} />
           <StyledRow>
             <HomeText />
           </StyledRow>
