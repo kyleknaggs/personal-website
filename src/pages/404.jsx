@@ -6,6 +6,10 @@ import Main from '../components/Main';
 
 const StyledDiv = styled.div`
   padding: 11vw 0vw;
+
+  @media screen and (max-width: 1080px) {
+    padding: 20vw 0vw;
+  }
 `;
 
 const StyledRow = styled.div`
