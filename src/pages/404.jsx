@@ -9,10 +9,6 @@ import BodyLink from '../components/Links/BodyLink';
 
 const StyledDiv = styled.div`
   padding: 11vw 0vw;
-
-  @media screen and (max-width: 1080px) {
-    padding: 20vw 0vw;
-  }
 `;
 
 // In Gatsby the 404 page should be located at src/pages/404.js
