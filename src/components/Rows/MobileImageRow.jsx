@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Spacer from './Spacer';
-import Paragraph from './Paragraph';
-import MobileOrderHistoryImg from '../assets/mobileOrderHistory.png';
-import MobileMattressAndFoundationImg from '../assets/mobileMattressAndFoundation.png';
-import MobileCustomRequestImg from '../assets/mobileCustomRequest.png';
+import Spacer from '../Spacer';
+import Paragraph from '../Paragraph';
+import MobileOrderHistoryImg from '../../assets/mobileOrderHistory.png';
+import MobileMattressAndFoundationImg from '../../assets/mobileMattressAndFoundation.png';
+import MobileCustomRequestImg from '../../assets/mobileCustomRequest.png';
 
 const StyledWrapperDiv = styled.div`
   width: 100%;

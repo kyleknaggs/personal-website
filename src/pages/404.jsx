@@ -4,7 +4,7 @@ import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import H1 from '../components/H1';
-import PaddingRow from '../components/PaddingRow';
+import PaddingRow from '../components/Rows/PaddingRow';
 import BodyLink from '../components/Links/BodyLink';
 
 const StyledDiv = styled.div`
