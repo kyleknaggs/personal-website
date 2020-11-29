@@ -4,6 +4,7 @@ import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import H1 from '../components/H1';
+import PaddingRow from '../components/PaddingRow';
 import HomeText from '../components/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
@@ -16,10 +17,6 @@ const StyledDiv = styled.div`
   }
 `;
 
-const StyledRow = styled.div`
-  padding: 17px 0px;
-`;
-
 export default function Home() {
   const { INDEX_HERO } = TEXT;
 
@@ -28,12 +25,12 @@ export default function Home() {
       <Main>
         <StyledDiv>
           <H1 text={INDEX_HERO} />
-          <StyledRow>
+          <PaddingRow>
             <HomeText />
-          </StyledRow>
-          <StyledRow>
+          </PaddingRow>
+          <PaddingRow>
             <ButtonLink to={KyleKnaggsResumePdf}>View Resume</ButtonLink>
-          </StyledRow>
+          </PaddingRow>
         </StyledDiv>
       </Main>
     </Layout>

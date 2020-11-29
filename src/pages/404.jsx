@@ -4,6 +4,7 @@ import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import H1 from '../components/H1';
+import PaddingRow from '../components/PaddingRow';
 import BodyLink from '../components/Links/BodyLink';
 
 const StyledDiv = styled.div`
@@ -12,10 +13,6 @@ const StyledDiv = styled.div`
   @media screen and (max-width: 1080px) {
     padding: 20vw 0vw;
   }
-`;
-
-const StyledRow = styled.div`
-  padding: 17px 0px;
 `;
 
 // In Gatsby the 404 page should be located at src/pages/404.js
@@ -34,7 +31,7 @@ export default function NotFound() {
       <Main>
         <StyledDiv>
           <H1 text={NOT_FOUND_HERO} />
-          <StyledRow>
+          <PaddingRow>
             <p>{NOT_FOUND_DESCRIPTION}</p>
             <p>
               {NOT_FOUND_NEXT_STEPS}
@@ -44,7 +41,7 @@ export default function NotFound() {
               </BodyLink>
               .
             </p>
-          </StyledRow>
+          </PaddingRow>
         </StyledDiv>
       </Main>
     </Layout>
