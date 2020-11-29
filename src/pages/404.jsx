@@ -31,8 +31,9 @@ const StyledH1 = styled.h1`
 
 // TODO:
 // 1. Add link to home page
-// 2. Review page structure and markup and see if this can be done more efficiently
-export default function Home() {
+// In Gatsby the 404 page should be located at src/pages/404.js
+// However, you cannot have a 404 function name in JavaScript
+export default function NotFound() {
   const {
     NOT_FOUND_HERO,
     NOT_FOUND_DESCRIPTION,
