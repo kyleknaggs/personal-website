@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from './Spacer';
@@ -13,7 +13,7 @@ const StyledImg = styled.img`
 
 export default function ImageFullWidth({ description, src, alt }) {
   return (
-    <span>
+    <Fragment>
       <Spacer />
       <Paragraph
         text={description}
@@ -22,7 +22,7 @@ export default function ImageFullWidth({ description, src, alt }) {
         src={src}
         alt={alt}
       />
-    </span>
+    </Fragment>
   );
 }
 

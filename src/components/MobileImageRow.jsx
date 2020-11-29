@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from './Spacer';
@@ -43,7 +43,7 @@ const StyledLargeImg = styled.img`
 
 export default function MobileImageRow({ description }) {
   return (
-    <span>
+    <Fragment>
       <Spacer />
       <Paragraph
         text={description}
@@ -66,7 +66,7 @@ export default function MobileImageRow({ description }) {
           />
         </StyledSmallImgWrapper>
       </StyledWrapperDiv>
-    </span>
+    </Fragment>
   );
 }
 

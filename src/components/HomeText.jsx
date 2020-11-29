@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { HREF } from '../utility/constants';
 import BodyLink from './Links/BodyLink';
@@ -15,7 +15,7 @@ export default function BodyText() {
   const { ONLINE_ORDERING_PLATFORM, FIREFOX_DEBUGGER } = HREF;
 
   return (
-    <span>
+    <Fragment>
       <StyledP>
         Selected Work:&nbsp;
         <BodyLink to={ONLINE_ORDERING_PLATFORM}>
@@ -28,6 +28,6 @@ export default function BodyText() {
         .
       </StyledP>
       <StyledP>{KEY_SKILLS_TEXT}</StyledP>
-    </span>
+    </Fragment>
   );
 }
