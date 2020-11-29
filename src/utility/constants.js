@@ -27,7 +27,9 @@ const TEXT = {
   MOBILE_IMAGE_DESCRIPTION: 'Screenshots of the application on a mobile device simulated using Chrome’s Developer Tools:',
   NOT_FOUND_HERO: 'Oh no! 404 Error. Unfortunately the page that you are looking for does not exist.',
   NOT_FOUND_DESCRIPTION: 'This is probably because either there is an error in the URL that you entered into the web browser or the page that you are looking for has since been moved or deleted.',
-  NOT_FOUND_NEXT_STEPS: 'Please check the URL that you entered into the web browser or return to the homepage.',
+  NOT_FOUND_NEXT_STEPS: 'Please check the URL that you entered into the web browser or return to the',
+  HOMEPAGE_LINK: '/',
+  HOMEPAGE_LINK_TEXT: 'homepage',
 };
 
 export { HREF, TEXT };

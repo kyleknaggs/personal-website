@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
+import BodyLink from '../components/Links/BodyLink';
 
 const StyledDiv = styled.div`
   padding: 11vw 0vw;
@@ -29,8 +30,6 @@ const StyledH1 = styled.h1`
   }
 `;
 
-// TODO:
-// 1. Add link to home page
 // In Gatsby the 404 page should be located at src/pages/404.js
 // However, you cannot have a 404 function name in JavaScript
 export default function NotFound() {
@@ -38,6 +37,8 @@ export default function NotFound() {
     NOT_FOUND_HERO,
     NOT_FOUND_DESCRIPTION,
     NOT_FOUND_NEXT_STEPS,
+    HOMEPAGE_LINK,
+    HOMEPAGE_LINK_TEXT,
   } = TEXT;
 
   return (
@@ -47,7 +48,14 @@ export default function NotFound() {
           <StyledH1>{NOT_FOUND_HERO}</StyledH1>
           <StyledRow>
             <p>{NOT_FOUND_DESCRIPTION}</p>
-            <p>{NOT_FOUND_NEXT_STEPS}</p>
+            <p>
+              {NOT_FOUND_NEXT_STEPS}
+              &nbsp;
+              <BodyLink to={HOMEPAGE_LINK}>
+                {HOMEPAGE_LINK_TEXT}
+              </BodyLink>
+              .
+            </p>
           </StyledRow>
         </StyledDiv>
       </Main>
