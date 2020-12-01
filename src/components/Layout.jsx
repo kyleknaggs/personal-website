@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import HomeLink from './Links/HomeLink';
@@ -37,10 +36,6 @@ export default function Layout({ children }) {
 
   return (
     <Fragment>
-      <Helmet>
-        <title>Kyle Knaggs | Software Developer</title>
-        <meta name="description" content="A design-oriented Software Developer obsessed with making great user interfaces a reality." />
-      </Helmet>
       <StyledHeader>
         <div>
           <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>

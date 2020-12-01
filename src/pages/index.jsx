@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
+import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
@@ -17,11 +20,23 @@ const StyledDiv = styled.div`
   }
 `;
 
-export default function Home() {
+export default function Home({ data }) {
   const { INDEX_HERO } = TEXT;
+  const {
+    site: {
+      siteMetadata: {
+        title,
+        description,
+      },
+    },
+  } = data;
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
       <Main>
         <StyledDiv>
           <H1 text={INDEX_HERO} />
@@ -36,3 +51,25 @@ export default function Home() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        title,
+        description
+      }
+    }
+  }
+`;
+
+Home.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string,
+      }),
+    }),
+  }).isRequired,
+};
