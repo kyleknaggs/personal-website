@@ -53,12 +53,18 @@ export default function OnlineOrderingPlatform() {
     NOTABLE_CONTRIBUTIONS_LIST_THIRD,
     NOTABLE_CONTRIBUTIONS_LIST_FOURTH,
     NOTABLE_CONTRIBUTIONS_LIST_FIFTH,
+    ORDER_ENTRY_PROCESS_OLD_ALT,
     ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
+    ORDER_ENTRY_PROCESS_NEW_ALT,
     ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
+    FREEDOM_ORDER_ENTRY_ALT,
     FREEDOM_ORDER_ENTRY_DESCRIPTION,
+    WORKING_ORDER_ANALYSIS_ALT,
     WORKING_ORDER_ANALYSIS_DESCRIPTION,
     PRECEDENT_IMAGE_DESCRIPTION,
+    PRECEDENT_SITE_STUDY_DIAGRAM_ALT,
     PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION,
+    HOME_PAGE_MOCKUP_ALT,
     HOME_PAGE_MOCKUP_DESCRIPTION,
     MOBILE_IMAGE_DESCRIPTION,
   } = TEXT;
@@ -97,22 +103,22 @@ export default function OnlineOrderingPlatform() {
         <ImageFullWidth
           description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
           src={OrderEntryProcessOldImg}
-          alt=""
+          alt={ORDER_ENTRY_PROCESS_OLD_ALT}
         />
         <ImageFullWidth
           description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
           src={OrderEntryProcessNewImg}
-          alt=""
+          alt={ORDER_ENTRY_PROCESS_NEW_ALT}
         />
         <ImageFullWidth
           description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
           src={FreedomOrderEntryImg}
-          alt=""
+          alt={FREEDOM_ORDER_ENTRY_ALT}
         />
         <ImageFullWidth
           description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
           src={WorkingOrderAnalysisImg}
-          alt=""
+          alt={WORKING_ORDER_ANALYSIS_ALT}
         />
         <PrecedentImageRow
           description={PRECEDENT_IMAGE_DESCRIPTION}
@@ -120,12 +126,12 @@ export default function OnlineOrderingPlatform() {
         <ImageFullWidth
           description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
           src={PrecedentSiteStudyDiagromImg}
-          alt=""
+          alt={PRECEDENT_SITE_STUDY_DIAGRAM_ALT}
         />
         <ImageFullWidth
           description={HOME_PAGE_MOCKUP_DESCRIPTION}
           src={HomePageMockupImg}
-          alt=""
+          alt={HOME_PAGE_MOCKUP_ALT}
         />
         <MobileImageRow
           description={MOBILE_IMAGE_DESCRIPTION}
