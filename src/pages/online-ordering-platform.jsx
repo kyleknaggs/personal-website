@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import Main from '../components/Main';
 import Video from '../components/Video';
@@ -41,6 +42,8 @@ const StyledLi = styled.li`
 
 export default function OnlineOrderingPlatform() {
   const {
+    ONLINE_ORDERING_PLATFORM_META_TITLE,
+    ONLINE_ORDERING_PLATFORM_META_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_HERO,
     AFL_ONLINE_VIDEO_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_WRITE_UP,
@@ -62,6 +65,10 @@ export default function OnlineOrderingPlatform() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{ONLINE_ORDERING_PLATFORM_META_TITLE}</title>
+        <meta name="description" content={ONLINE_ORDERING_PLATFORM_META_DESCRIPTION} />
+      </Helmet>
       <Main>
         <Video />
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />

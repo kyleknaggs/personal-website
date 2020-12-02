@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
@@ -15,6 +16,8 @@ const StyledDiv = styled.div`
 // However, you cannot have a 404 function name in JavaScript
 export default function NotFound() {
   const {
+    NOT_FOUND_META_TITLE,
+    NOT_FOUND_META_DESCRIPTION,
     NOT_FOUND_HERO,
     NOT_FOUND_DESCRIPTION,
     NOT_FOUND_NEXT_STEPS,
@@ -24,6 +27,10 @@ export default function NotFound() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{NOT_FOUND_META_TITLE}</title>
+        <meta name="description" content={NOT_FOUND_META_DESCRIPTION} />
+      </Helmet>
       <Main>
         <StyledDiv>
           <H1 text={NOT_FOUND_HERO} />

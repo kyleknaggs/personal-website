@@ -8,6 +8,8 @@ const HREF = {
 
 const TEXT = {
   INDEX_HERO: 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.',
+  ONLINE_ORDERING_PLATFORM_META_TITLE: 'Kyle Knaggs | Online Ordering Platform',
+  ONLINE_ORDERING_PLATFORM_META_DESCRIPTION: 'Online ordering platform for the largest mattress and foam manufacturer in the English-speaking Caribbean.',
   ONLINE_ORDERING_PLATFORM_HERO: 'The design and development of an online ordering system for the largest mattress and foam manufacturer in the English-speaking Caribbean',
   AFL_ONLINE_VIDEO_DESCRIPTION: 'Screencast of typical user flow in Application. All prices have been blurred for confidentiality purposes.',
   ONLINE_ORDERING_PLATFORM_WRITE_UP: 'As the largest mattress and foam manufacturer in the English speaking Caribbean, Advance Foam processes over 22,000 orders each year. With the launch of their new website in 2017, the company was eager to rethink how it traditionally accepted orders, a process that was not only burdensome on its customers, but on the company itself. After an intense period of research where each part of the order entry process was thoroughly documented and examined it became increasingly clear that a single page web application could help automate this time consuming and error prone process that was heavily reliant on human intervention. Once this decision was made, an ideal user flow was designed, mock ups were developed and the application was built with iterative feedback from stakeholders on a regular basis. The application processed its first order August 2018, and since then, many of the company’s major customers have adopted the web application as the primary means by which they create, place and manage orders. Product features were then added to the platform on a regular basis as a means of continually on-boarding new clients while simultaneously refining existing customers’ user experience.',
@@ -25,6 +27,8 @@ const TEXT = {
   PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION: 'A sample of the analysis done when evaluating an existing user interface:',
   HOME_PAGE_MOCKUP_DESCRIPTION: 'A high-fidelity mockup of the home page of the application:',
   MOBILE_IMAGE_DESCRIPTION: 'Screenshots of the application on a mobile device simulated using Chrome’s Developer Tools:',
+  NOT_FOUND_META_TITLE: 'Kyle Knaggs | 404 Page Not Found',
+  NOT_FOUND_META_DESCRIPTION: 'Unfortunately the page that you are looking for does not exist.',
   NOT_FOUND_HERO: 'Oh no! 404 Error. Unfortunately the page that you are looking for does not exist.',
   NOT_FOUND_DESCRIPTION: 'This is probably because either there is an error in the URL that you entered into the web browser or the page that you are looking for has since been moved or deleted.',
   NOT_FOUND_NEXT_STEPS: 'Please check the URL that you entered into the web browser or return to the',
