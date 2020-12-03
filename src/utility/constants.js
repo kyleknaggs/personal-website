@@ -44,6 +44,9 @@ const TEXT = {
   AMAZON_PRECEDENT_ALT: 'Screenshot of the home page of Amazon\'s website',
   CASPER_PRECEDENT_ALT: 'Screenshot of the home page of the Casper\'s website',
   TRADE_GECKO_PRECEDENT_ALT: 'Screenshot of the home page of Trade Gecko\'s website',
+  MOBILE_CUSTOM_REQUEST_ALT: 'Screenshot of the Custom Request tab of the AFL Online web application on a mobile device',
+  MOBILE_MATTRESS_AND_FOUNDATION_ALT: 'Screenshot of the Mattress and Foundation tab of the AFL Online web application on a mobile device',
+  MOBILE_ORDER_HISTORY_ALT: 'Screenshot of the Order History tab of the AFL Online web application on a mobile device',
 };
 
 export { HREF, TEXT };

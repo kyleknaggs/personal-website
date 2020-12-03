@@ -6,6 +6,7 @@ import Paragraph from '../Text/Paragraph';
 import MobileOrderHistoryImg from '../../assets/mobileOrderHistory.png';
 import MobileMattressAndFoundationImg from '../../assets/mobileMattressAndFoundation.png';
 import MobileCustomRequestImg from '../../assets/mobileCustomRequest.png';
+import { TEXT } from '../../utility/constants';
 
 const StyledWrapperDiv = styled.div`
   width: 100%;
@@ -42,6 +43,12 @@ const StyledLargeImg = styled.img`
 `;
 
 export default function MobileImageRow({ description }) {
+  const {
+    MOBILE_CUSTOM_REQUEST_ALT,
+    MOBILE_MATTRESS_AND_FOUNDATION_ALT,
+    MOBILE_ORDER_HISTORY_ALT,
+  } = TEXT;
+
   return (
     <Fragment>
       <Spacer />
@@ -52,17 +59,17 @@ export default function MobileImageRow({ description }) {
         <StyledSmallImgWrapper>
           <StyledSmallImg
             src={MobileOrderHistoryImg}
-            alt=""
+            alt={MOBILE_ORDER_HISTORY_ALT}
           />
         </StyledSmallImgWrapper>
         <StyledLargeImg
           src={MobileMattressAndFoundationImg}
-          alt=""
+          alt={MOBILE_MATTRESS_AND_FOUNDATION_ALT}
         />
         <StyledSmallImgWrapper>
           <StyledSmallImg
             src={MobileCustomRequestImg}
-            alt=""
+            alt={MOBILE_CUSTOM_REQUEST_ALT}
           />
         </StyledSmallImgWrapper>
       </StyledWrapperDiv>
