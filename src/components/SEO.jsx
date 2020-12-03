@@ -14,8 +14,8 @@ export default function SEO({ title, description }) {
       {/* Test images have been borrowed as placeholders */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content="https://www.imdb.com/title/tt0117500/" />
-      <meta property="og:url" content="https://ia.media-imdb.com/images/rock.jpg" />
+      <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+      <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
       {/* Twitter's meta tags which are similar to the Open Graph Protocol */}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
