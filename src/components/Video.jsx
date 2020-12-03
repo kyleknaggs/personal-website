@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import PlayIconImg from '../assets/playIcon.png';
 import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.jpg';
+import { TEXT } from '../utility/constants';
 
 const AbsoluteWrapperDiv = styled.div`
   position: absolute;
@@ -56,6 +57,11 @@ const VideoIframe = styled.iframe`
 `;
 
 export default function Video() {
+  const {
+    AFL_ONLINE_PLACEHOLDER_VIDEO_ALT,
+    PLAY_ICON_ALT,
+  } = TEXT;
+
   const [hasClickedPlay, setHasClickedPlay] = useState(false);
 
   function handlePlayClick() {
@@ -67,12 +73,12 @@ export default function Video() {
       <RelativeWrapperDiv>
         <PlaceholderImg
           src={AflOnlinePlaceholderVideoImg}
-          alt=""
+          alt={AFL_ONLINE_PLACEHOLDER_VIDEO_ALT}
         />
         <PlayArrowDiv
           onClick={handlePlayClick}
         >
-          <img src={PlayIconImg} alt="" />
+          <img src={PlayIconImg} alt={PLAY_ICON_ALT} />
         </PlayArrowDiv>
       </RelativeWrapperDiv>
     </AbsoluteWrapperDiv>

@@ -47,6 +47,8 @@ const TEXT = {
   MOBILE_CUSTOM_REQUEST_ALT: 'Screenshot of the Custom Request tab of the AFL Online web application on a mobile device',
   MOBILE_MATTRESS_AND_FOUNDATION_ALT: 'Screenshot of the Mattress and Foundation tab of the AFL Online web application on a mobile device',
   MOBILE_ORDER_HISTORY_ALT: 'Screenshot of the Order History tab of the AFL Online web application on a mobile device',
+  AFL_ONLINE_PLACEHOLDER_VIDEO_ALT: 'Screenshot of the log in portal for the AFL Online web application',
+  PLAY_ICON_ALT: 'Play icon',
 };
 
 export { HREF, TEXT };
