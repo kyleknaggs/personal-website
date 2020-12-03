@@ -40,6 +40,10 @@ const TEXT = {
   NOT_FOUND_NEXT_STEPS: 'Please check the URL that you entered into the web browser or return to the',
   HOMEPAGE_LINK: '/',
   HOMEPAGE_LINK_TEXT: 'homepage',
+  ALLY_PRECEDENT_ALT: 'Screenshot of the home page of Ally Financial\'s web application',
+  AMAZON_PRECEDENT_ALT: 'Screenshot of the home page of Amazon\'s website',
+  CASPER_PRECEDENT_ALT: 'Screenshot of the home page of the Casper\'s website',
+  TRADE_GECKO_PRECEDENT_ALT: 'Screenshot of the home page of Trade Gecko\'s website',
 };
 
 export { HREF, TEXT };

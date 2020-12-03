@@ -7,6 +7,7 @@ import AmazonPrecedentImg from '../../assets/amazonPrecedent.jpg';
 import AllyPrecedentImg from '../../assets/allyPrecedent.jpg';
 import CasperPrecedentImg from '../../assets/casperPrecedent.jpg';
 import TradeGeckoPrecedentImg from '../../assets/tradeGeckoPrecedent.jpg';
+import { TEXT } from '../../utility/constants';
 
 const StyledWrapperDiv = styled.div`
   width: 100%;
@@ -28,6 +29,13 @@ const StyledImg = styled.img`
 `;
 
 export default function PrecedentImageRow({ description }) {
+  const {
+    ALLY_PRECEDENT_ALT,
+    AMAZON_PRECEDENT_ALT,
+    CASPER_PRECEDENT_ALT,
+    TRADE_GECKO_PRECEDENT_ALT,
+  } = TEXT;
+
   return (
     <Fragment>
       <Spacer />
@@ -37,19 +45,19 @@ export default function PrecedentImageRow({ description }) {
       <StyledWrapperDiv>
         <StyledImg
           src={AmazonPrecedentImg}
-          alt=""
+          alt={AMAZON_PRECEDENT_ALT}
         />
         <StyledImg
           src={CasperPrecedentImg}
-          alt=""
+          alt={CASPER_PRECEDENT_ALT}
         />
         <StyledImg
           src={AllyPrecedentImg}
-          alt=""
+          alt={ALLY_PRECEDENT_ALT}
         />
         <StyledImg
           src={TradeGeckoPrecedentImg}
-          alt=""
+          alt={TRADE_GECKO_PRECEDENT_ALT}
         />
       </StyledWrapperDiv>
     </Fragment>
