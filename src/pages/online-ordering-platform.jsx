@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import Main from '../components/Main';
 import Video from '../components/Video';
 import Paragraph from '../components/Text/Paragraph';
@@ -71,10 +71,10 @@ export default function OnlineOrderingPlatform() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{ONLINE_ORDERING_PLATFORM_META_TITLE}</title>
-        <meta name="description" content={ONLINE_ORDERING_PLATFORM_META_DESCRIPTION} />
-      </Helmet>
+      <SEO
+        title={ONLINE_ORDERING_PLATFORM_META_TITLE}
+        description={ONLINE_ORDERING_PLATFORM_META_DESCRIPTION}
+      />
       <Main>
         <Video />
         <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />

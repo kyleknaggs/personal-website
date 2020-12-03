@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import Main from '../components/Main';
 import H1 from '../components/Text/H1';
 import PaddingRow from '../components/Rows/PaddingRow';
 import HomeText from '../components/Text/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
+import { TEXT } from '../utility/constants';
 
 const StyledDiv = styled.div`
   padding: 6vw 0vw;
@@ -33,10 +33,10 @@ export default function Home({ data }) {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-      </Helmet>
+      <SEO
+        title={title}
+        description={description}
+      />
       <Main>
         <StyledDiv>
           <H1 text={INDEX_HERO} />

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
-import { TEXT } from '../utility/constants';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import Main from '../components/Main';
 import H1 from '../components/Text/H1';
 import PaddingRow from '../components/Rows/PaddingRow';
 import BodyLink from '../components/Links/BodyLink';
+import { TEXT } from '../utility/constants';
 
 const StyledDiv = styled.div`
   padding: 11vw 0vw;
@@ -27,10 +27,10 @@ export default function NotFound() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{NOT_FOUND_META_TITLE}</title>
-        <meta name="description" content={NOT_FOUND_META_DESCRIPTION} />
-      </Helmet>
+      <SEO
+        title={NOT_FOUND_META_TITLE}
+        description={NOT_FOUND_META_DESCRIPTION}
+      />
       <Main>
         <StyledDiv>
           <H1 text={NOT_FOUND_HERO} />
