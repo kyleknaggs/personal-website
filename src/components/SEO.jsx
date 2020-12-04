@@ -21,23 +21,27 @@ export default function SEO({ title, description }) {
       url,
     },
   } = site;
+  const socialSharingImage = `${url}${SocialSharingImg.substring(1)}`;
 
+  // URL for testing Open Graph Protocol: https://developers.facebook.com/tools/debug
+  // URL for testing Twitter Card Protocol: https://cards-dev.twitter.com/validator
+  // Post that dictates that images must be 1500w x 1000h in order to work on WhatsApp:
+  // https://forum.squarespace.com/topic/160133-my-template-does-not-enable-picture-preview-of-site-shared-on-whatsapp/
   return (
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      {/* Image solution for WhatsApp suggested on: https://forum.squarespace.com/topic/160133-my-template-does-not-enable-picture-preview-of-site-shared-on-whatsapp/ */}
+      {/* Open Graph Protocol */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content="https://kyle-knaggs-personal-website.netlify.app/" />
-      {/* Test image urls with updated social sharing image */}
-      <meta property="og:image" content={`${url}${SocialSharingImg.substring(1)}`} />
+      <meta property="og:url" content={url} />
+      <meta property="og:image" content={socialSharingImage} />
       <meta property="og:image:width" content="1500" />
       <meta property="og:image:height" content="1000" />
-      {/* Twitter's meta tags which are similar to the Open Graph Protocol */}
+      {/* Twitter Card Protocol */}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${url}${SocialSharingImg.substring(1)}`} />
+      <meta name="twitter:image" content={socialSharingImage} />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   );
