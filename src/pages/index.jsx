@@ -12,6 +12,17 @@ import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
 import { TEXT } from '../utility/constants';
 
+export const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        title,
+        description
+      }
+    }
+  }
+`;
+
 const StyledDiv = styled.div`
   padding: 6vw 0vw;
 
@@ -51,17 +62,6 @@ export default function Home({ data }) {
     </Layout>
   );
 }
-
-export const query = graphql`
-  query HomePageQuery {
-    site {
-      siteMetadata {
-        title,
-        description
-      }
-    }
-  }
-`;
 
 Home.propTypes = {
   data: PropTypes.shape({
