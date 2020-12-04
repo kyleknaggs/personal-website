@@ -15,13 +15,14 @@ export default function SEO({ title, description }) {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content="https://kyle-knaggs-personal-website.netlify.app/" />
-      <meta property="og:image" content="http://static1.squarespace.com/static/5c7574443560c34b3b68682f/t/5cd4729908522907045f107c/1557426842694/social-sharing.png?format=1500w" />
-      <meta property="og:image:width" content="1080" />
-      <meta property="og:image:height" content="564" />
+      {/* Image solution for WhatsApp suggested on: https://forum.squarespace.com/topic/160133-my-template-does-not-enable-picture-preview-of-site-shared-on-whatsapp/ */}
+      <meta property="og:image" content="http://via.placeholder.com/1500x1000" />
+      <meta property="og:image:width" content="1500" />
+      <meta property="og:image:height" content="1000" />
       {/* Twitter's meta tags which are similar to the Open Graph Protocol */}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content="http://static1.squarespace.com/static/5c7574443560c34b3b68682f/t/5cd4729908522907045f107c/1557426842694/social-sharing.png?format=1500w" />
+      <meta name="twitter:image" content="http://via.placeholder.com/1500x1000" />
       <meta name="twitter:card" content="summary_large_image" />
     </Helmet>
   );
