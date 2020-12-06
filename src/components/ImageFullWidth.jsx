@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from './Spacer';
-import Paragraph from './Text/Paragraph';
+import FigCaption from './Text/FigCaption';
 
 // The image file can be larger than the max width of the parent element
 // Because of this setting width to 100% ensures that it never extends
@@ -13,16 +13,16 @@ const StyledImg = styled.img`
 
 export default function ImageFullWidth({ description, src, alt }) {
   return (
-    <Fragment>
+    <figure>
       <Spacer />
-      <Paragraph
+      <FigCaption
         text={description}
       />
       <StyledImg
         src={src}
         alt={alt}
       />
-    </Fragment>
+    </figure>
   );
 }
 
