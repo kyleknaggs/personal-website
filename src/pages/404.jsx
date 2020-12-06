@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Main from '../components/Main';
 import H1 from '../components/Text/H1';
-import PaddingRow from '../components/Rows/PaddingRow';
+import SectionWithPadding from '../components/Rows/SectionWithPadding';
 import BodyLink from '../components/Links/BodyLink';
 import { TEXT } from '../utility/constants';
 
@@ -34,7 +34,7 @@ export default function NotFound() {
       <Main>
         <StyledDiv>
           <H1 text={NOT_FOUND_HERO} />
-          <PaddingRow>
+          <SectionWithPadding>
             <p>{NOT_FOUND_DESCRIPTION}</p>
             <p>
               {NOT_FOUND_NEXT_STEPS}
@@ -44,7 +44,7 @@ export default function NotFound() {
               </BodyLink>
               .
             </p>
-          </PaddingRow>
+          </SectionWithPadding>
         </StyledDiv>
       </Main>
     </Layout>

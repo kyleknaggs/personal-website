@@ -2,19 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const StyledRow = styled.div`
+const StyledSection = styled.section`
   padding: 17px 0px;
 `;
 
-export default function PaddingRow({ children }) {
+export default function SectionWithPadding({ children }) {
   return (
-    <StyledRow>
+    <StyledSection>
       {children}
-    </StyledRow>
+    </StyledSection>
   );
 }
 
-PaddingRow.propTypes = {
+SectionWithPadding.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,

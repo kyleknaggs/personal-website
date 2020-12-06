@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Main from '../components/Main';
 import H1 from '../components/Text/H1';
-import PaddingRow from '../components/Rows/PaddingRow';
+import SectionWithPadding from '../components/Rows/SectionWithPadding';
 import HomeText from '../components/Text/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
@@ -51,12 +51,12 @@ export default function Home({ data }) {
       <Main>
         <StyledDiv>
           <H1 text={INDEX_HERO} />
-          <PaddingRow>
+          <SectionWithPadding>
             <HomeText />
-          </PaddingRow>
-          <PaddingRow>
+          </SectionWithPadding>
+          <SectionWithPadding>
             <ButtonLink to={KyleKnaggsResumePdf}>View Resume</ButtonLink>
-          </PaddingRow>
+          </SectionWithPadding>
         </StyledDiv>
       </Main>
     </Layout>
