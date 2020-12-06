@@ -45,7 +45,6 @@ export default function OnlineOrderingPlatform() {
     ONLINE_ORDERING_PLATFORM_META_TITLE,
     ONLINE_ORDERING_PLATFORM_META_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_HERO,
-    AFL_ONLINE_VIDEO_DESCRIPTION,
     ONLINE_ORDERING_PLATFORM_WRITE_UP,
     NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION,
     NOTABLE_CONTRIBUTIONS_LIST_FIRST,
@@ -79,7 +78,6 @@ export default function OnlineOrderingPlatform() {
         <article>
           <section>
             <Video />
-            <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
           </section>
           <section>
             <Spacer />

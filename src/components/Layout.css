@@ -26,12 +26,12 @@ body {
   src: url("../../fonts/GillSansNova-Bold.woff");
 }
 
-p, a, li, h1, h2 {
+p, a, li, h1, h2, figcaption {
   font-family: "Gill Sans Nova Light", "Gill Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
 
-p, li, h1, h2 {
+p, li, h1, h2, figcaption {
   color: hsl(0, 0%, 20%);
 }
 

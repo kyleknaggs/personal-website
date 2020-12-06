@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import PlayIconImg from '../assets/playIcon.png';
 import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.jpg';
+import FigCaption from './Text/FigCaption';
 import { TEXT } from '../utility/constants';
 
 const AbsoluteWrapperDiv = styled.div`
@@ -60,6 +61,7 @@ export default function Video() {
   const {
     AFL_ONLINE_PLACEHOLDER_VIDEO_ALT,
     PLAY_ICON_ALT,
+    AFL_ONLINE_VIDEO_DESCRIPTION,
   } = TEXT;
 
   const [hasClickedPlay, setHasClickedPlay] = useState(false);
@@ -85,24 +87,27 @@ export default function Video() {
   );
 
   return (
-    <VideoWrapperDiv>
-      <AspectRatioWrapperDiv>
-        {
-          !hasClickedPlay ? (
-            placeholderContent
-          ) : (
-            // The autoplay value is passed to the iframe via the allow
-            // attribute. This was done as passing this value in via
-            // autoplay="true" does not autplay the video as expected
-            <VideoIframe
-              src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
-              title="aflOnline_applicationDemo"
-              id="yui_3_17_2_1_1606395291091_76"
-              allow="autoplay; fullscreen"
-            />
-          )
-        }
-      </AspectRatioWrapperDiv>
-    </VideoWrapperDiv>
+    <figure>
+      <VideoWrapperDiv>
+        <AspectRatioWrapperDiv>
+          {
+            !hasClickedPlay ? (
+              placeholderContent
+            ) : (
+              // The autoplay value is passed to the iframe via the allow
+              // attribute. This was done as passing this value in via
+              // autoplay="true" does not autplay the video as expected
+              <VideoIframe
+                src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
+                title="aflOnline_applicationDemo"
+                id="yui_3_17_2_1_1606395291091_76"
+                allow="autoplay; fullscreen"
+              />
+            )
+          }
+        </AspectRatioWrapperDiv>
+      </VideoWrapperDiv>
+      <FigCaption text={AFL_ONLINE_VIDEO_DESCRIPTION} />
+    </figure>
   );
 }
