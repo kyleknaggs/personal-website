@@ -76,69 +76,75 @@ export default function OnlineOrderingPlatform() {
         description={ONLINE_ORDERING_PLATFORM_META_DESCRIPTION}
       />
       <Main>
-        <Video />
-        <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
-        <Spacer />
-        <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
-        <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
-        <Spacer />
-        <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
-        <StyledUl>
-          <StyledLi>
-            <p>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</p>
-          </StyledLi>
-          <StyledLi>
-            <p>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</p>
-          </StyledLi>
-          <StyledLi>
-            <p>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</p>
-          </StyledLi>
-          <StyledLi>
-            <p>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</p>
-          </StyledLi>
-          <StyledLi>
-            <p>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</p>
-          </StyledLi>
-        </StyledUl>
-        <ImageFullWidth
-          description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
-          src={OrderEntryProcessOldImg}
-          alt={ORDER_ENTRY_PROCESS_OLD_ALT}
-        />
-        <ImageFullWidth
-          description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
-          src={OrderEntryProcessNewImg}
-          alt={ORDER_ENTRY_PROCESS_NEW_ALT}
-        />
-        <ImageFullWidth
-          description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
-          src={FreedomOrderEntryImg}
-          alt={FREEDOM_ORDER_ENTRY_ALT}
-        />
-        <ImageFullWidth
-          description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
-          src={WorkingOrderAnalysisImg}
-          alt={WORKING_ORDER_ANALYSIS_ALT}
-        />
-        <PrecedentImageRow
-          description={PRECEDENT_IMAGE_DESCRIPTION}
-        />
-        <ImageFullWidth
-          description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
-          src={PrecedentSiteStudyDiagromImg}
-          alt={PRECEDENT_SITE_STUDY_DIAGRAM_ALT}
-        />
-        <ImageFullWidth
-          description={HOME_PAGE_MOCKUP_DESCRIPTION}
-          src={HomePageMockupImg}
-          alt={HOME_PAGE_MOCKUP_ALT}
-        />
-        <MobileImageRow
-          description={MOBILE_IMAGE_DESCRIPTION}
-        />
-        <Spacer
-          visibleOnMobile
-        />
+        <article>
+          <section>
+            <Video />
+            <Paragraph text={AFL_ONLINE_VIDEO_DESCRIPTION} />
+          </section>
+          <section>
+            <Spacer />
+            <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
+            <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
+            <Spacer />
+            <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
+            <StyledUl>
+              <StyledLi>
+                <p>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</p>
+              </StyledLi>
+              <StyledLi>
+                <p>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</p>
+              </StyledLi>
+              <StyledLi>
+                <p>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</p>
+              </StyledLi>
+              <StyledLi>
+                <p>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</p>
+              </StyledLi>
+              <StyledLi>
+                <p>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</p>
+              </StyledLi>
+            </StyledUl>
+            <ImageFullWidth
+              description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
+              src={OrderEntryProcessOldImg}
+              alt={ORDER_ENTRY_PROCESS_OLD_ALT}
+            />
+            <ImageFullWidth
+              description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
+              src={OrderEntryProcessNewImg}
+              alt={ORDER_ENTRY_PROCESS_NEW_ALT}
+            />
+            <ImageFullWidth
+              description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
+              src={FreedomOrderEntryImg}
+              alt={FREEDOM_ORDER_ENTRY_ALT}
+            />
+            <ImageFullWidth
+              description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
+              src={WorkingOrderAnalysisImg}
+              alt={WORKING_ORDER_ANALYSIS_ALT}
+            />
+            <PrecedentImageRow
+              description={PRECEDENT_IMAGE_DESCRIPTION}
+            />
+            <ImageFullWidth
+              description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
+              src={PrecedentSiteStudyDiagromImg}
+              alt={PRECEDENT_SITE_STUDY_DIAGRAM_ALT}
+            />
+            <ImageFullWidth
+              description={HOME_PAGE_MOCKUP_DESCRIPTION}
+              src={HomePageMockupImg}
+              alt={HOME_PAGE_MOCKUP_ALT}
+            />
+            <MobileImageRow
+              description={MOBILE_IMAGE_DESCRIPTION}
+            />
+            <Spacer
+              visibleOnMobile
+            />
+          </section>
+        </article>
       </Main>
     </Layout>
   );
