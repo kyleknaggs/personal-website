@@ -6,7 +6,7 @@ import SocialLink from './Links/SocialLink';
 import { HREF } from '../utility/constants';
 import './Layout.css';
 
-const StyledHeader = styled.header`
+const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
 
   return (
     <Fragment>
-      <StyledHeader>
+      <StyledNav>
         <div>
           <HomeLink to={INDEX}>Kyle Knaggs</HomeLink>
         </div>
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
           <SocialLink site="LinkedIn" />
           <SocialLink site="GitHub" />
         </StyledFlexDiv>
-      </StyledHeader>
+      </StyledNav>
       <StyledJustifyContentDiv>
         {children}
       </StyledJustifyContentDiv>
