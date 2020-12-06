@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from '../Spacer';
-import Paragraph from '../Text/Paragraph';
+import FigCaption from '../Text/FigCaption';
 import MobileOrderHistoryImg from '../../assets/mobileOrderHistory.png';
 import MobileMattressAndFoundationImg from '../../assets/mobileMattressAndFoundation.png';
 import MobileCustomRequestImg from '../../assets/mobileCustomRequest.png';
@@ -50,9 +50,9 @@ export default function MobileImageRow({ description }) {
   } = TEXT;
 
   return (
-    <Fragment>
+    <figure>
       <Spacer />
-      <Paragraph
+      <FigCaption
         text={description}
       />
       <StyledWrapperDiv>
@@ -73,7 +73,7 @@ export default function MobileImageRow({ description }) {
           />
         </StyledSmallImgWrapper>
       </StyledWrapperDiv>
-    </Fragment>
+    </figure>
   );
 }
 
