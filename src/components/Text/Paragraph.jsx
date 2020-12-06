@@ -2,17 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const StyledDiv = styled.div`
-  display: flex;
-  align-items: center;
+const StyledP = styled.p`
   padding: 17px 0;
 `;
 
 export default function Paragraph({ text }) {
   return (
-    <StyledDiv>
-      <p>{text}</p>
-    </StyledDiv>
+    <StyledP>{text}</StyledP>
   );
 }
 
