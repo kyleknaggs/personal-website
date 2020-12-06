@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Spacer from '../Spacer';
-import Paragraph from '../Text/Paragraph';
+import FigCaption from '../Text/FigCaption';
 import AmazonPrecedentImg from '../../assets/amazonPrecedent.jpg';
 import AllyPrecedentImg from '../../assets/allyPrecedent.jpg';
 import CasperPrecedentImg from '../../assets/casperPrecedent.jpg';
@@ -37,9 +37,9 @@ export default function PrecedentImageRow({ description }) {
   } = TEXT;
 
   return (
-    <Fragment>
+    <figure>
       <Spacer />
-      <Paragraph
+      <FigCaption
         text={description}
       />
       <StyledWrapperDiv>
@@ -60,7 +60,7 @@ export default function PrecedentImageRow({ description }) {
           alt={TRADE_GECKO_PRECEDENT_ALT}
         />
       </StyledWrapperDiv>
-    </Fragment>
+    </figure>
   );
 }
 
