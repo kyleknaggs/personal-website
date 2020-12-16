@@ -9,7 +9,7 @@ import H1 from '../components/Text/H1';
 import SectionWithPadding from '../components/Rows/SectionWithPadding';
 import HomeText from '../components/Text/HomeText';
 import ButtonLink from '../components/Links/ButtonLink';
-import KyleKnaggsResumePdf from '../assets/kyleKnaggsResume.pdf';
+import KyleKnaggsResumePdf from '../assets/2020_kyleKnaggsResume.pdf';
 import { TEXT } from '../utility/constants';
 
 export const query = graphql`
