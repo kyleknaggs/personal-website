@@ -14,7 +14,6 @@ module.exports = {
   siteMetadata: {
     title: 'Kyle Knaggs | Software Developer',
     description: 'A Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.',
-    /* TODO: Update when deployed to kyleknaggs.com */
-    url: 'https://kyle-knaggs-personal-website.netlify.app/',
+    url: 'https://kyleknaggs.com/',
   },
 };
