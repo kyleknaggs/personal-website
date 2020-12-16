@@ -1,36 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import PlayIconImg from '../assets/playIcon.png';
-import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.jpg';
+import PlaceholderContent from './PlaceholderContent';
 import FigCaption from './Text/FigCaption';
 import { TEXT } from '../utility/constants';
-
-const AbsoluteWrapperDiv = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-`;
-
-const RelativeWrapperDiv = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const PlaceholderImg = styled.img`
-  width: 100%;
-`;
-
-const PlayArrowDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-`;
 
 const VideoWrapperDiv = styled.div`
   @media screen and (max-width: 1024px) {
@@ -59,8 +31,6 @@ const VideoIframe = styled.iframe`
 
 export default function Video() {
   const {
-    AFL_ONLINE_PLACEHOLDER_VIDEO_ALT,
-    PLAY_ICON_ALT,
     AFL_ONLINE_VIDEO_DESCRIPTION,
   } = TEXT;
 
@@ -70,29 +40,15 @@ export default function Video() {
     setHasClickedPlay(true);
   }
 
-  const placeholderContent = (
-    <AbsoluteWrapperDiv>
-      <RelativeWrapperDiv>
-        <PlaceholderImg
-          src={AflOnlinePlaceholderVideoImg}
-          alt={AFL_ONLINE_PLACEHOLDER_VIDEO_ALT}
-        />
-        <PlayArrowDiv
-          onClick={handlePlayClick}
-        >
-          <img src={PlayIconImg} alt={PLAY_ICON_ALT} />
-        </PlayArrowDiv>
-      </RelativeWrapperDiv>
-    </AbsoluteWrapperDiv>
-  );
-
   return (
     <figure>
       <VideoWrapperDiv>
         <AspectRatioWrapperDiv>
           {
             !hasClickedPlay ? (
-              placeholderContent
+              <PlaceholderContent
+                handlePlayClick={handlePlayClick}
+              />
             ) : (
               // The autoplay value is passed to the iframe via the allow
               // attribute. This was done as passing this value in via
