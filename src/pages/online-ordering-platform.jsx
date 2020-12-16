@@ -6,6 +6,7 @@ import Main from '../components/Main';
 import Video from '../components/Video';
 import Paragraph from '../components/Text/Paragraph';
 import Spacer from '../components/Spacer';
+import NotableContributions from '../components/Text/NotableContributions';
 import ImageFullWidth from '../components/ImageFullWidth';
 import PrecedentImageRow from '../components/Rows/PrecedentImageRow';
 import MobileImageRow from '../components/Rows/MobileImageRow';
@@ -26,20 +27,6 @@ const StyledH1 = styled.h1`
   }
 `;
 
-const StyledUl = styled.ul`
-  padding-left: 30px;
-  list-style: none;
-`;
-
-const StyledLi = styled.li`
-  display: flex;
-  padding: 8px 0px;
-  ::before {
-    content: "•";
-    padding-right: 10px;
-  }
-`;
-
 export default function OnlineOrderingPlatform() {
   const {
     ONLINE_ORDERING_PLATFORM_META_TITLE,
@@ -47,11 +34,6 @@ export default function OnlineOrderingPlatform() {
     ONLINE_ORDERING_PLATFORM_HERO,
     ONLINE_ORDERING_PLATFORM_WRITE_UP,
     NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION,
-    NOTABLE_CONTRIBUTIONS_LIST_FIRST,
-    NOTABLE_CONTRIBUTIONS_LIST_SECOND,
-    NOTABLE_CONTRIBUTIONS_LIST_THIRD,
-    NOTABLE_CONTRIBUTIONS_LIST_FOURTH,
-    NOTABLE_CONTRIBUTIONS_LIST_FIFTH,
     ORDER_ENTRY_PROCESS_OLD_ALT,
     ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
     ORDER_ENTRY_PROCESS_NEW_ALT,
@@ -85,23 +67,7 @@ export default function OnlineOrderingPlatform() {
             <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
             <Spacer />
             <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
-            <StyledUl>
-              <StyledLi>
-                <p>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</p>
-              </StyledLi>
-              <StyledLi>
-                <p>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</p>
-              </StyledLi>
-              <StyledLi>
-                <p>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</p>
-              </StyledLi>
-              <StyledLi>
-                <p>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</p>
-              </StyledLi>
-              <StyledLi>
-                <p>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</p>
-              </StyledLi>
-            </StyledUl>
+            <NotableContributions />
             <ImageFullWidth
               description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
               src={OrderEntryProcessOldImg}
