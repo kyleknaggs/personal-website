@@ -13,9 +13,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        // TODO: Confirm this Measurement ID works and remove if it does not.
         trackingIds: [
-          'G-7LVDBJZ8E6',
+          'UA-185670686-1',
         ],
       },
     },
