@@ -6,7 +6,7 @@ const StyledSection = styled.section`
   padding: 17px 0px;
 `;
 
-export default function SectionWithPadding({ children }) {
+export default function Section({ children }) {
   return (
     <StyledSection>
       {children}
@@ -14,7 +14,7 @@ export default function SectionWithPadding({ children }) {
   );
 }
 
-SectionWithPadding.propTypes = {
+Section.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element,

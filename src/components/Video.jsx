@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import PlaceholderContent from './PlaceholderContent';
+import VideoPlaceholder from './VideoPlaceholder';
 import FigCaption from './Text/FigCaption';
 import { TEXT } from '../utility/constants';
 
@@ -46,7 +46,7 @@ export default function Video() {
         <AspectRatioWrapperDiv>
           {
             !hasClickedPlay ? (
-              <PlaceholderContent
+              <VideoPlaceholder
                 handlePlayClick={handlePlayClick}
               />
             ) : (

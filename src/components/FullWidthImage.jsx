@@ -11,7 +11,7 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
-export default function ImageFullWidth({ description, src, alt }) {
+export default function FullWidthImage({ description, src, alt }) {
   return (
     <figure>
       <Spacer />
@@ -26,7 +26,7 @@ export default function ImageFullWidth({ description, src, alt }) {
   );
 }
 
-ImageFullWidth.propTypes = {
+FullWidthImage.propTypes = {
   description: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,

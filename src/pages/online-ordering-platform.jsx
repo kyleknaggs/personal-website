@@ -7,9 +7,9 @@ import Video from '../components/Video';
 import Paragraph from '../components/Text/Paragraph';
 import Spacer from '../components/Spacer';
 import NotableContributions from '../components/Text/NotableContributions';
-import ImageFullWidth from '../components/ImageFullWidth';
-import PrecedentImageRow from '../components/Rows/PrecedentImageRow';
-import MobileImageRow from '../components/Rows/MobileImageRow';
+import FullWidthImage from '../components/FullWidthImage';
+import PrecedentImages from '../components/Rows/PrecedentImages';
+import MobileImages from '../components/Rows/MobileImages';
 import OrderEntryProcessOldImg from '../assets/orderEntryProcessOld.png';
 import OrderEntryProcessNewImg from '../assets/orderEntryProcessNew.png';
 import FreedomOrderEntryImg from '../assets/freedomOrderEntry.png';
@@ -68,40 +68,40 @@ export default function OnlineOrderingPlatform() {
             <Spacer />
             <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
             <NotableContributions />
-            <ImageFullWidth
+            <FullWidthImage
               description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
               src={OrderEntryProcessOldImg}
               alt={ORDER_ENTRY_PROCESS_OLD_ALT}
             />
-            <ImageFullWidth
+            <FullWidthImage
               description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
               src={OrderEntryProcessNewImg}
               alt={ORDER_ENTRY_PROCESS_NEW_ALT}
             />
-            <ImageFullWidth
+            <FullWidthImage
               description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
               src={FreedomOrderEntryImg}
               alt={FREEDOM_ORDER_ENTRY_ALT}
             />
-            <ImageFullWidth
+            <FullWidthImage
               description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
               src={WorkingOrderAnalysisImg}
               alt={WORKING_ORDER_ANALYSIS_ALT}
             />
-            <PrecedentImageRow
+            <PrecedentImages
               description={PRECEDENT_IMAGE_DESCRIPTION}
             />
-            <ImageFullWidth
+            <FullWidthImage
               description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
               src={PrecedentSiteStudyDiagromImg}
               alt={PRECEDENT_SITE_STUDY_DIAGRAM_ALT}
             />
-            <ImageFullWidth
+            <FullWidthImage
               description={HOME_PAGE_MOCKUP_DESCRIPTION}
               src={HomePageMockupImg}
               alt={HOME_PAGE_MOCKUP_ALT}
             />
-            <MobileImageRow
+            <MobileImages
               description={MOBILE_IMAGE_DESCRIPTION}
             />
             <Spacer

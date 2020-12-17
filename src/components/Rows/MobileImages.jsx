@@ -42,7 +42,7 @@ const StyledLargeImg = styled.img`
   width: 100%;
 `;
 
-export default function MobileImageRow({ description }) {
+export default function MobileImages({ description }) {
   const {
     MOBILE_CUSTOM_REQUEST_ALT,
     MOBILE_MATTRESS_AND_FOUNDATION_ALT,
@@ -77,6 +77,6 @@ export default function MobileImageRow({ description }) {
   );
 }
 
-MobileImageRow.propTypes = {
+MobileImages.propTypes = {
   description: PropTypes.string.isRequired,
 };

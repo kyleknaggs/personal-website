@@ -28,7 +28,7 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
-export default function PrecedentImageRow({ description }) {
+export default function PrecedentImages({ description }) {
   const {
     ALLY_PRECEDENT_ALT,
     AMAZON_PRECEDENT_ALT,
@@ -64,6 +64,6 @@ export default function PrecedentImageRow({ description }) {
   );
 }
 
-PrecedentImageRow.propTypes = {
+PrecedentImages.propTypes = {
   description: PropTypes.string.isRequired,
 };

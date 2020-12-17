@@ -6,8 +6,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Main from '../components/Main';
 import H1 from '../components/Text/H1';
-import SectionWithPadding from '../components/Rows/SectionWithPadding';
-import HomeText from '../components/Text/HomeText';
+import Section from '../components/Rows/Section';
+import WorkAndSkills from '../components/Text/WorkAndSkills';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/2020_kyleKnaggsResume.pdf';
 import { TEXT } from '../utility/constants';
@@ -51,12 +51,12 @@ export default function Index({ data }) {
       <Main>
         <StyledDiv>
           <H1 text={INDEX_HERO} />
-          <SectionWithPadding>
-            <HomeText />
-          </SectionWithPadding>
-          <SectionWithPadding>
+          <Section>
+            <WorkAndSkills />
+          </Section>
+          <Section>
             <ButtonLink to={KyleKnaggsResumePdf}>View Resume</ButtonLink>
-          </SectionWithPadding>
+          </Section>
         </StyledDiv>
       </Main>
     </Layout>

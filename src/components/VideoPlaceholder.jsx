@@ -32,7 +32,7 @@ const PlayArrowDiv = styled.div`
   cursor: pointer;
 `;
 
-export default function PlaceholderContent({ handlePlayClick }) {
+export default function VideoPlaceholder({ handlePlayClick }) {
   const {
     AFL_ONLINE_PLACEHOLDER_VIDEO_ALT,
     PLAY_ICON_ALT,
@@ -55,6 +55,6 @@ export default function PlaceholderContent({ handlePlayClick }) {
   );
 }
 
-PlaceholderContent.propTypes = {
+VideoPlaceholder.propTypes = {
   handlePlayClick: PropTypes.func.isRequired,
 };
