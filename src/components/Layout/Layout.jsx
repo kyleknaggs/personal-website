@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import HomeLink from './Links/HomeLink';
-import SocialLink from './Links/SocialLink';
-import { HREF } from '../utility/constants';
+import HomeLink from '../Links/HomeLink';
+import SocialLink from '../Links/SocialLink';
+import { HREF } from '../../utility/constants';
 import './Layout.css';
 
 const StyledNav = styled.nav`

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import PlayIconImg from '../assets/playIcon.png';
-import AflOnlinePlaceholderVideoImg from '../assets/aflOnlinePlaceholderVideoImg.jpg';
-import { TEXT } from '../utility/constants';
+import PlayIconImg from '../../assets/playIcon.png';
+import AflOnlinePlaceholderVideoImg from '../../assets/aflOnlinePlaceholderVideoImg.jpg';
+import { TEXT } from '../../utility/constants';
 
 const AbsoluteWrapperDiv = styled.div`
   position: absolute;

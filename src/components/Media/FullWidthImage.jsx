@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Spacer from './Spacer';
-import FigCaption from './Text/FigCaption';
+import Spacer from '../Layout/Spacer';
+import FigCaption from '../Text/FigCaption';
 
 // The image file can be larger than the max width of the parent element
 // Because of this setting width to 100% ensures that it never extends

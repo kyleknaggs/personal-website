@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/Layout';
 import SEO from '../components/SEO';
-import Main from '../components/Main';
+import Main from '../components/Layout/Main';
 import H1 from '../components/Text/H1';
-import Section from '../components/Rows/Section';
+import Section from '../components/Layout/Section';
 import BodyLink from '../components/Links/BodyLink';
 import { TEXT } from '../utility/constants';
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import VideoPlaceholder from './VideoPlaceholder';
-import FigCaption from './Text/FigCaption';
-import { TEXT } from '../utility/constants';
+import FigCaption from '../Text/FigCaption';
+import { TEXT } from '../../utility/constants';
 
 const VideoWrapperDiv = styled.div`
   @media screen and (max-width: 1024px) {
