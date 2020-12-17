@@ -31,7 +31,7 @@ const StyledDiv = styled.div`
   }
 `;
 
-export default function Home({ data }) {
+export default function Index({ data }) {
   const { INDEX_HERO } = TEXT;
   const {
     site: {
@@ -63,7 +63,7 @@ export default function Home({ data }) {
   );
 }
 
-Home.propTypes = {
+Index.propTypes = {
   data: PropTypes.shape({
     site: PropTypes.shape({
       siteMetadata: PropTypes.shape({
