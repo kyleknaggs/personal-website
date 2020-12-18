@@ -50,6 +50,13 @@ const TEXT = {
   MOBILE_ORDER_HISTORY_ALT: 'Screenshot of the Order History tab of the AFL Online web application on a mobile device',
   AFL_ONLINE_PLACEHOLDER_VIDEO_ALT: 'Screenshot of the log in portal for the AFL Online web application',
   PLAY_ICON_ALT: 'Play icon',
+  WORK_AND_SKILLS: {
+    SELECTED_WORK_PREFIX: 'Selected Work:',
+    SELECTED_WORK_ONLINE_ORDERING_PLATFORM: 'Online Ordering Platform for the largest mattress manufacturer in the Caribbean',
+    SELECTED_WORK_CONJUGATION: 'and',
+    SELECTED_WORK_FIREFOX_DEBUGGER: 'Open Source Contributions to the Firefox Debugger',
+    KEY_SKILLS_PREFIX_AND_DESCRIPTION: 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.',
+  },
 };
 
 export { HREF, TEXT };

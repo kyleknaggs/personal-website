@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { HREF } from '../../utility/constants';
+import { HREF, TEXT } from '../../utility/constants';
 import BodyLink from '../Links/BodyLink';
 
 const StyledP = styled.p`
@@ -12,24 +12,34 @@ const StyledP = styled.p`
 `;
 
 export default function WorkAndSkills() {
-  const KEY_SKILLS_TEXT = 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.';
-  const ONLINE_ORDERING_PLATFORM_TEXT = 'Online Ordering Platform for the largest mattress manufacturer in the Caribbean';
   const { ONLINE_ORDERING_PLATFORM, FIREFOX_DEBUGGER } = HREF;
+  const {
+    WORK_AND_SKILLS: {
+      SELECTED_WORK_PREFIX,
+      SELECTED_WORK_ONLINE_ORDERING_PLATFORM,
+      SELECTED_WORK_CONJUGATION,
+      SELECTED_WORK_FIREFOX_DEBUGGER,
+      KEY_SKILLS_PREFIX_AND_DESCRIPTION,
+    },
+  } = TEXT;
 
   return (
     <Fragment>
       <StyledP>
-        Selected Work:&nbsp;
+        {SELECTED_WORK_PREFIX}
+        &nbsp;
         <BodyLink to={ONLINE_ORDERING_PLATFORM}>
-          {ONLINE_ORDERING_PLATFORM_TEXT}
+          {SELECTED_WORK_ONLINE_ORDERING_PLATFORM}
         </BodyLink>
-        &nbsp;and an&nbsp;
+        &nbsp;
+        {SELECTED_WORK_CONJUGATION}
+        &nbsp;
         <BodyLink to={FIREFOX_DEBUGGER} external>
-          Open Source Contributions to the Firefox Debugger
+          {SELECTED_WORK_FIREFOX_DEBUGGER}
         </BodyLink>
         .
       </StyledP>
-      <StyledP>{KEY_SKILLS_TEXT}</StyledP>
+      <StyledP>{KEY_SKILLS_PREFIX_AND_DESCRIPTION}</StyledP>
     </Fragment>
   );
 }
