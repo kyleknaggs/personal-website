@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledSection = styled.section`
-  padding: 17px 0px;
+  padding: var(--padding-height) 0;
 `;
 
 export default function Section({ children }) {

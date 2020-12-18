@@ -4,7 +4,7 @@ import { HREF } from '../../utility/constants';
 import BodyLink from '../Links/BodyLink';
 
 const StyledP = styled.p`
-  padding-bottom: 17px;
+  padding-bottom: var(--padding-height);
 
   @media (min-width: 1200px) {
     padding-bottom: 0;

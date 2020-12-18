@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledFigCaption = styled.figcaption`
-  padding: 17px 0;
+  padding: var(--padding-height) 0;
 `;
 
 export default function FigCaption({ text }) {
