@@ -13,8 +13,8 @@ const StyledWrapperDiv = styled.div`
   width: 100%;
   display: grid;
   margin-top: 10px; /* Keeps visual spacing of text to image consistent */
-  column-gap: 34px;
-  row-gap: 34px;
+  column-gap: calc(2 * var(--padding-height));;
+  row-gap: calc(2 * var(--padding-height));;
   grid-template-columns: 1fr;
 
   @media (min-width: 576px) {
