@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyledH1 = styled.h1`
-  width: 87.5%;
-  font-size: 64px;
+  font-size: 36px;
+  width: 100%;
 
-  @media screen and (max-width: 576px) {
-    font-size: 36px;
+  @media (min-width: 576px) {
+    font-size: 64px;
   }
 
-  @media screen and (max-width: 1200px) {
-    width: 100%;
+  @media (min-width: 1200px) {
+    width: 87.5%;
   }
 `;
 

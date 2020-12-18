@@ -5,15 +5,15 @@ import { Link } from 'gatsby';
 
 const StyledLink = styled(Link)`
   color: hsl(0, 0%, 20%);
-  font-size: 28px;
   text-decoration: none;
+  font-size: 22px;
 
   :hover {
     color: #000;
   }
 
-  @media screen and (max-width: 576px) {
-    font-size: 22px;
+  @media (min-width: 576px) {
+    font-size: 28px;
   }
 `;
 

@@ -24,10 +24,10 @@ export const query = graphql`
 `;
 
 const StyledDiv = styled.div`
-  padding: 6vw 0vw;
+  padding 11vw 0vw;
 
-  @media screen and (max-width: 1200px) {
-    padding 11vw 0vw;
+  @media (min-width: 1200px) {
+    padding: 6vw 0vw;
   }
 `;
 

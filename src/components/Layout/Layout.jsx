@@ -12,14 +12,14 @@ const StyledNav = styled.nav`
   align-items: center;
   padding-left: 4vw;
   padding-right: 4vw;
-  height: var(--menu-height-lg);
+  height: var(--menu-height-sm);
 
-  @media screen and (max-width: 1200px) {
+  @media (min-width: 576px) {
     height: var(--menu-height-md);
   }
 
-  @media screen and (max-width: 576px) {
-    height: var(--menu-height-sm);
+  @media (min-width: 1200px) {
+    height: var(--menu-height-lg);
   }
 `;
 

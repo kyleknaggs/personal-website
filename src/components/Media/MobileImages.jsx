@@ -11,13 +11,13 @@ import { TEXT } from '../../utility/constants';
 const StyledWrapperDiv = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 34px;
   margin-top: 10px; /* Keeps visual spacing of text to image consistent */
+  grid-template-columns: 1fr;
+  row-gap: 34px;
+  column-gap: 34px;
 
-  @media screen and (max-width: 576px) {
-    grid-template-columns: 1fr;
-    row-gap: 34px;
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `;
 

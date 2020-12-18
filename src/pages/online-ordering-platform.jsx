@@ -20,10 +20,10 @@ import { TEXT } from '../utility/constants';
 
 const StyledH1 = styled.h1`
   font-family: 'Gill Sans Nova Bold';
-  font-size: 32px;
+  font-size: 16px;
 
-  @media screen and (max-width: 1200px) {
-    font-size: 16px;
+  @media (min-width: 1200px) {
+    font-size: 32px;
   }
 `;
 

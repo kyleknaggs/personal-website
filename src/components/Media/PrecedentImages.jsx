@@ -12,17 +12,17 @@ import { TEXT } from '../../utility/constants';
 const StyledWrapperDiv = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 34px;
   margin-top: 10px; /* Keeps visual spacing of text to image consistent */
+  column-gap: 34px;
+  row-gap: 34px;
+  grid-template-columns: 1fr;
 
-  @media screen and (max-width: 1200px) {
+  @media (min-width: 576px) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 34px;
   }
   
-  @media screen and (max-width: 576px) {
-    grid-template-columns: 1fr;
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
 
