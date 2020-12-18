@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import VideoPlaceholder from './VideoPlaceholder';
 import FigCaption from '../Text/FigCaption';
-import { TEXT } from '../../utility/constants';
+import { HREF, TEXT } from '../../utility/constants';
 
 const VideoWrapperDiv = styled.div`
   padding-top: 11vw;
@@ -33,6 +33,9 @@ const VideoIframe = styled.iframe`
 
 export default function Video() {
   const {
+    AFL_ONLINE_VIDEO,
+  } = HREF;
+  const {
     AFL_ONLINE_VIDEO_DESCRIPTION,
   } = TEXT;
 
@@ -56,7 +59,7 @@ export default function Video() {
               // attribute. This was done as passing this value in via
               // autoplay="true" does not autplay the video as expected
               <VideoIframe
-                src="https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1"
+                src={AFL_ONLINE_VIDEO}
                 title="aflOnline_applicationDemo"
                 id="yui_3_17_2_1_1606395291091_76"
                 allow="autoplay; fullscreen"
