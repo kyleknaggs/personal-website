@@ -6,11 +6,11 @@ const StyledH1 = styled.h1`
   width: 87.5%;
   font-size: 64px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     font-size: 36px;
   }
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
   }
 `;

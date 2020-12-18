@@ -22,7 +22,7 @@ const StyledH1 = styled.h1`
   font-family: 'Gill Sans Nova Bold';
   font-size: 32px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     font-size: 16px;
   }
 `;

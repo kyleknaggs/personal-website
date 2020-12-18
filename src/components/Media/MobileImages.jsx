@@ -14,7 +14,8 @@ const StyledWrapperDiv = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 34px;
   margin-top: 10px; /* Keeps visual spacing of text to image consistent */
-  @media screen and (max-width: 640px) {
+
+  @media screen and (max-width: 576px) {
     grid-template-columns: 1fr;
     row-gap: 34px;
   }
@@ -31,7 +32,7 @@ const StyledSmallImg = styled.img`
   margin-top: 50px;
   /* Preserve aspect ratio when resizing image */
   object-fit: contain;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     width: 100%;
     height: 100%;
     margin: 0;

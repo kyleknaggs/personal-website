@@ -15,11 +15,13 @@ const StyledWrapperDiv = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 34px;
   margin-top: 10px; /* Keeps visual spacing of text to image consistent */
-  @media screen and (max-width: 1024px) {
+
+  @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
     row-gap: 34px;
   }
-  @media screen and (max-width: 640px) {
+  
+  @media screen and (max-width: 576px) {
     grid-template-columns: 1fr;
   }
 `;

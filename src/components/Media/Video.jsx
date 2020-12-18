@@ -5,7 +5,7 @@ import FigCaption from '../Text/FigCaption';
 import { TEXT } from '../../utility/constants';
 
 const VideoWrapperDiv = styled.div`
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     padding-top: 11vw;
   }
 `;

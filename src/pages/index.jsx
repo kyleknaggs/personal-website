@@ -26,7 +26,7 @@ export const query = graphql`
 const StyledDiv = styled.div`
   padding: 6vw 0vw;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     padding 11vw 0vw;
   }
 `;

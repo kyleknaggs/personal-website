@@ -12,12 +12,12 @@ const StyledMain = styled.main`
   -o-animation: fadeIn ease-in 2.5s;
   -ms-animation: fadeIn ease-in 2.5s;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     min-height: calc(100vh - var(--menu-height-md));
     padding 0vw 15vw;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     min-height: calc(100vh - var(--menu-height-sm));
   }
 `;

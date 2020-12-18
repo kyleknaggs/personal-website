@@ -12,7 +12,7 @@ const StyledLink = styled(Link)`
     color: #000;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     font-size: 22px;
   }
 `;

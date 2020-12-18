@@ -6,11 +6,11 @@ const StyledSpacerDiv = styled.div`
   width: 100%;
   height: 60px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     height: 85px;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     height: ${(props) => (props.visibleOnMobile ? '85px' : '0px')}
   }
 `;

@@ -14,11 +14,11 @@ const StyledNav = styled.nav`
   padding-right: 4vw;
   height: var(--menu-height-lg);
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     height: var(--menu-height-md);
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 576px) {
     height: var(--menu-height-sm);
   }
 `;
