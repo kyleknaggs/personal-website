@@ -9,7 +9,8 @@ const StyledUl = styled.ul`
 
 const StyledLi = styled.li`
   display: flex;
-  padding: 8px 0px;
+  padding: 8px 0;
+
   ::before {
     content: "•";
     padding-right: 10px;
