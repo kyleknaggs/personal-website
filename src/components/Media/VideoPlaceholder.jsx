@@ -34,8 +34,10 @@ const PlayArrowDiv = styled.div`
 
 export default function VideoPlaceholder({ handlePlayClick }) {
   const {
-    AFL_ONLINE_PLACEHOLDER_VIDEO_ALT,
-    PLAY_ICON_ALT,
+    VIDEO_PLACEHOLDER: {
+      AFL_ONLINE_SCREENSHOT_ALT,
+      PLAY_ICON_ALT,
+    },
   } = TEXT;
 
   return (
@@ -43,7 +45,7 @@ export default function VideoPlaceholder({ handlePlayClick }) {
       <RelativeWrapperDiv>
         <PlaceholderImg
           src={AflOnlinePlaceholderVideoImg}
-          alt={AFL_ONLINE_PLACEHOLDER_VIDEO_ALT}
+          alt={AFL_ONLINE_SCREENSHOT_ALT}
         />
         <PlayArrowDiv
           onClick={handlePlayClick}

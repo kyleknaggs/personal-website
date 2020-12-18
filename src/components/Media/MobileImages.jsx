@@ -45,9 +45,11 @@ const StyledLargeImg = styled.img`
 
 export default function MobileImages({ description }) {
   const {
-    MOBILE_CUSTOM_REQUEST_ALT,
-    MOBILE_MATTRESS_AND_FOUNDATION_ALT,
-    MOBILE_ORDER_HISTORY_ALT,
+    MOBILE_IMAGES: {
+      CUSTOM_REQUEST_ALT,
+      MATTRESS_AND_FOUNDATION_ALT,
+      ORDER_HISTORY_ALT,
+    },
   } = TEXT;
 
   return (
@@ -60,17 +62,17 @@ export default function MobileImages({ description }) {
         <StyledSmallImgWrapper>
           <StyledSmallImg
             src={MobileOrderHistoryImg}
-            alt={MOBILE_ORDER_HISTORY_ALT}
+            alt={ORDER_HISTORY_ALT}
           />
         </StyledSmallImgWrapper>
         <StyledLargeImg
           src={MobileMattressAndFoundationImg}
-          alt={MOBILE_MATTRESS_AND_FOUNDATION_ALT}
+          alt={MATTRESS_AND_FOUNDATION_ALT}
         />
         <StyledSmallImgWrapper>
           <StyledSmallImg
             src={MobileCustomRequestImg}
-            alt={MOBILE_CUSTOM_REQUEST_ALT}
+            alt={CUSTOM_REQUEST_ALT}
           />
         </StyledSmallImgWrapper>
       </StyledWrapperDiv>

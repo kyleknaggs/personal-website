@@ -16,28 +16,30 @@ const StyledDiv = styled.div`
 // However, you cannot have a 404 function name in JavaScript
 export default function NotFound() {
   const {
-    NOT_FOUND_META_TITLE,
-    NOT_FOUND_META_DESCRIPTION,
-    NOT_FOUND_HERO,
-    NOT_FOUND_DESCRIPTION,
-    NOT_FOUND_NEXT_STEPS,
-    HOMEPAGE_LINK,
-    HOMEPAGE_LINK_TEXT,
+    NOT_FOUND: {
+      META_TITLE,
+      META_DESCRIPTION,
+      HERO,
+      REASON,
+      NEXT_STEPS,
+      HOMEPAGE_LINK,
+      HOMEPAGE_LINK_TEXT,
+    },
   } = TEXT;
 
   return (
     <Layout>
       <SEO
-        title={NOT_FOUND_META_TITLE}
-        description={NOT_FOUND_META_DESCRIPTION}
+        title={META_TITLE}
+        description={META_DESCRIPTION}
       />
       <Main>
         <StyledDiv>
-          <H1 text={NOT_FOUND_HERO} />
+          <H1 text={HERO} />
           <Section>
-            <p>{NOT_FOUND_DESCRIPTION}</p>
+            <p>{REASON}</p>
             <p>
-              {NOT_FOUND_NEXT_STEPS}
+              {NEXT_STEPS}
               &nbsp;
               <BodyLink to={HOMEPAGE_LINK}>
                 {HOMEPAGE_LINK_TEXT}

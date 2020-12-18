@@ -29,32 +29,34 @@ const StyledH1 = styled.h1`
 
 export default function OnlineOrderingPlatform() {
   const {
-    ONLINE_ORDERING_PLATFORM_META_TITLE,
-    ONLINE_ORDERING_PLATFORM_META_DESCRIPTION,
-    ONLINE_ORDERING_PLATFORM_HERO,
-    ONLINE_ORDERING_PLATFORM_WRITE_UP,
-    NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION,
-    ORDER_ENTRY_PROCESS_OLD_ALT,
-    ORDER_ENTRY_PROCESS_OLD_DESCRIPTION,
-    ORDER_ENTRY_PROCESS_NEW_ALT,
-    ORDER_ENTRY_PROCESS_NEW_DESCRIPTION,
-    FREEDOM_ORDER_ENTRY_ALT,
-    FREEDOM_ORDER_ENTRY_DESCRIPTION,
-    WORKING_ORDER_ANALYSIS_ALT,
-    WORKING_ORDER_ANALYSIS_DESCRIPTION,
-    PRECEDENT_IMAGE_DESCRIPTION,
-    PRECEDENT_SITE_STUDY_DIAGRAM_ALT,
-    PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION,
-    HOME_PAGE_MOCKUP_ALT,
-    HOME_PAGE_MOCKUP_DESCRIPTION,
-    MOBILE_IMAGE_DESCRIPTION,
+    ONLINE_ORDERING_PLATFORM: {
+      META_TITLE,
+      META_DESCRIPTION,
+      HERO,
+      DESCRIPTION,
+      ORDER_ENTRY_OLD_ALT,
+      ORDER_ENTRY_OLD_DESCRIPTION,
+      ORDER_ENTRY_NEW_ALT,
+      ORDER_ENTRY_NEW_DESCRIPTION,
+      FREEDOM_ALT,
+      FREEDOM_DESCRIPTION,
+      WORKING_ORDER_ALT,
+      WORKING_ORDER_DESCRIPTION,
+      PRECEDENTS_DESCRIPTION,
+      PRECEDENT_DIAGRAM_ALT,
+      PRECEDENT_DIAGRAM_DESCRIPTION,
+      HOME_MOCKUP_ALT,
+      HOME_MOCKUP_DESCRIPTION,
+      MOBILE_IMAGES_DESCRIPTION,
+      NOTABLE_CONTRIBUTIONS_DESCRIPTION,
+    },
   } = TEXT;
 
   return (
     <Layout>
       <SEO
-        title={ONLINE_ORDERING_PLATFORM_META_TITLE}
-        description={ONLINE_ORDERING_PLATFORM_META_DESCRIPTION}
+        title={META_TITLE}
+        description={META_DESCRIPTION}
       />
       <Main>
         <article>
@@ -63,46 +65,46 @@ export default function OnlineOrderingPlatform() {
           </section>
           <section>
             <Spacer />
-            <StyledH1>{ONLINE_ORDERING_PLATFORM_HERO}</StyledH1>
-            <Paragraph text={ONLINE_ORDERING_PLATFORM_WRITE_UP} />
+            <StyledH1>{HERO}</StyledH1>
+            <Paragraph text={DESCRIPTION} />
             <Spacer />
-            <Paragraph text={NOTABLE_CONTRIBUTIONS_LIST_DESCRIPTION} />
+            <Paragraph text={NOTABLE_CONTRIBUTIONS_DESCRIPTION} />
             <NotableContributions />
             <FullWidthImage
-              description={ORDER_ENTRY_PROCESS_OLD_DESCRIPTION}
+              description={ORDER_ENTRY_OLD_DESCRIPTION}
               src={OrderEntryProcessOldImg}
-              alt={ORDER_ENTRY_PROCESS_OLD_ALT}
+              alt={ORDER_ENTRY_OLD_ALT}
             />
             <FullWidthImage
-              description={ORDER_ENTRY_PROCESS_NEW_DESCRIPTION}
+              description={ORDER_ENTRY_NEW_DESCRIPTION}
               src={OrderEntryProcessNewImg}
-              alt={ORDER_ENTRY_PROCESS_NEW_ALT}
+              alt={ORDER_ENTRY_NEW_ALT}
             />
             <FullWidthImage
-              description={FREEDOM_ORDER_ENTRY_DESCRIPTION}
+              description={FREEDOM_DESCRIPTION}
               src={FreedomOrderEntryImg}
-              alt={FREEDOM_ORDER_ENTRY_ALT}
+              alt={FREEDOM_ALT}
             />
             <FullWidthImage
-              description={WORKING_ORDER_ANALYSIS_DESCRIPTION}
+              description={WORKING_ORDER_DESCRIPTION}
               src={WorkingOrderAnalysisImg}
-              alt={WORKING_ORDER_ANALYSIS_ALT}
+              alt={WORKING_ORDER_ALT}
             />
             <PrecedentImages
-              description={PRECEDENT_IMAGE_DESCRIPTION}
+              description={PRECEDENTS_DESCRIPTION}
             />
             <FullWidthImage
-              description={PRECEDENT_SITE_STUDY_DIAGRAM_DESCRIPTION}
+              description={PRECEDENT_DIAGRAM_DESCRIPTION}
               src={PrecedentSiteStudyDiagromImg}
-              alt={PRECEDENT_SITE_STUDY_DIAGRAM_ALT}
+              alt={PRECEDENT_DIAGRAM_ALT}
             />
             <FullWidthImage
-              description={HOME_PAGE_MOCKUP_DESCRIPTION}
+              description={HOME_MOCKUP_DESCRIPTION}
               src={HomePageMockupImg}
-              alt={HOME_PAGE_MOCKUP_ALT}
+              alt={HOME_MOCKUP_ALT}
             />
             <MobileImages
-              description={MOBILE_IMAGE_DESCRIPTION}
+              description={MOBILE_IMAGES_DESCRIPTION}
             />
             <Spacer
               visibleOnMobile

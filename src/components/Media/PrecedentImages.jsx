@@ -32,10 +32,12 @@ const StyledImg = styled.img`
 
 export default function PrecedentImages({ description }) {
   const {
-    ALLY_PRECEDENT_ALT,
-    AMAZON_PRECEDENT_ALT,
-    CASPER_PRECEDENT_ALT,
-    TRADE_GECKO_PRECEDENT_ALT,
+    PRECEDENT_IMAGES: {
+      ALLY_PRECEDENT_ALT,
+      AMAZON_PRECEDENT_ALT,
+      CASPER_PRECEDENT_ALT,
+      TRADE_GECKO_PRECEDENT_ALT,
+    },
   } = TEXT;
 
   return (

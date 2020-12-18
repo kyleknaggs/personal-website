@@ -32,7 +32,12 @@ const StyledDiv = styled.div`
 `;
 
 export default function Index({ data }) {
-  const { INDEX_HERO } = TEXT;
+  const {
+    INDEX: {
+      HERO,
+      BUTTON,
+    },
+  } = TEXT;
   const {
     site: {
       siteMetadata: {
@@ -50,12 +55,12 @@ export default function Index({ data }) {
       />
       <Main>
         <StyledDiv>
-          <H1 text={INDEX_HERO} />
+          <H1 text={HERO} />
           <Section>
             <WorkAndSkills />
           </Section>
           <Section>
-            <ButtonLink to={KyleKnaggsResumePdf}>View Resume</ButtonLink>
+            <ButtonLink to={KyleKnaggsResumePdf}>{BUTTON}</ButtonLink>
           </Section>
         </StyledDiv>
       </Main>

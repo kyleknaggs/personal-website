@@ -19,29 +19,31 @@ const StyledLi = styled.li`
 
 export default function NotableContributions() {
   const {
-    NOTABLE_CONTRIBUTIONS_LIST_FIRST,
-    NOTABLE_CONTRIBUTIONS_LIST_SECOND,
-    NOTABLE_CONTRIBUTIONS_LIST_THIRD,
-    NOTABLE_CONTRIBUTIONS_LIST_FOURTH,
-    NOTABLE_CONTRIBUTIONS_LIST_FIFTH,
+    NOTABLE_CONTRIBUTIONS: {
+      FIRST_BULLET,
+      SECOND_BULLET,
+      THIRD_BULLET,
+      FOURTH_BULLET,
+      FIFTH_BULLET,
+    },
   } = TEXT;
 
   return (
     <StyledUl>
       <StyledLi>
-        <p>{NOTABLE_CONTRIBUTIONS_LIST_FIRST}</p>
+        <p>{FIRST_BULLET}</p>
       </StyledLi>
       <StyledLi>
-        <p>{NOTABLE_CONTRIBUTIONS_LIST_SECOND}</p>
+        <p>{SECOND_BULLET}</p>
       </StyledLi>
       <StyledLi>
-        <p>{NOTABLE_CONTRIBUTIONS_LIST_THIRD}</p>
+        <p>{THIRD_BULLET}</p>
       </StyledLi>
       <StyledLi>
-        <p>{NOTABLE_CONTRIBUTIONS_LIST_FOURTH}</p>
+        <p>{FOURTH_BULLET}</p>
       </StyledLi>
       <StyledLi>
-        <p>{NOTABLE_CONTRIBUTIONS_LIST_FIFTH}</p>
+        <p>{FIFTH_BULLET}</p>
       </StyledLi>
     </StyledUl>
   );

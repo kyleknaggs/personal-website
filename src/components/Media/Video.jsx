@@ -36,7 +36,9 @@ export default function Video() {
     AFL_ONLINE_VIDEO,
   } = HREF;
   const {
-    AFL_ONLINE_VIDEO_DESCRIPTION,
+    VIDEO: {
+      AFL_ONLINE_VIDEO_DESCRIPTION,
+    },
   } = TEXT;
 
   const [hasClickedPlay, setHasClickedPlay] = useState(false);
