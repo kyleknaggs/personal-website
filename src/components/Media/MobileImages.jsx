@@ -46,9 +46,9 @@ const StyledLargeImg = styled.img`
 export default function MobileImages({ description }) {
   const {
     MOBILE_IMAGES: {
-      CUSTOM_REQUEST_ALT,
-      MATTRESS_AND_FOUNDATION_ALT,
       ORDER_HISTORY_ALT,
+      MATTRESS_AND_FOUNDATION_ALT,
+      CUSTOM_REQUEST_ALT,
     },
   } = TEXT;
 
