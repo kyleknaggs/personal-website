@@ -1,7 +1,5 @@
 # Kyle Knaggs - Personal Website
 
-## Overview
-
 This website was built using Gatsby's [hello-world starter](https://github.com/gatsbyjs/gatsby-starter-hello-world) and deployed using Netlify.
 
 Once you clone this repository locally on your machine you can get the project up and running by:
