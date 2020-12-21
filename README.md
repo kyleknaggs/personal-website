@@ -1,99 +1,64 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Kyle Knaggs - Personal Website
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## Overview
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+This website was built using Gatsby's [hello-world starter](https://github.com/gatsbyjs/gatsby-starter-hello-world) and deployed using Netlify.
 
-## 🚀 Quick start
+Once you clone this repository locally on your machine you can get the project up and running by:
 
-1.  **Create a Gatsby site.**
+1. Running `gatsby develop` in the Terminal.
+2. Visiting `http://localhost:8000` in a web browser.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+You can also visit an additional, second link `http://localhost:8000/___graphql` which may be useful when attempting to experiment and learn more about how you can use [GraphQL](https://graphql.org/) to query the website's data.
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+## Intent
 
-1.  **Start developing.**
+This website is intended to act as a simple, extensible, and maintainable platform for me to house links to my resume and any additional work samples that I may have done in the past or may complete in the future.
 
-    Navigate into your new site’s directory and start it up.
+My resume can easily be updated and uploaded to the website. The Selected Work section can contain external or internal links to additional projects that I may work on and want to showcase in the future. The Key Skills section can also be easily updated to reflect the technologies that best reflect my current skillset.
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+All of the pages on the website were also designed to aesthetically match my resume and be easily maintainable. This makes my resume and website appear as part of a cohesive visual package while also ensuring that any updates that I make to the website in the future should not be time-consuming or require significant technical overhead.
 
-1.  **Open the source code and start editing!**
+## Libraries
 
-    Your site is now running at `http://localhost:8000`!
+As this project was built with Gatsby, an open-source framework for building websites and applications, it also uses React.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+In addition to Gatsby and React some important libraries that are also included in the project are:
+1. [Styled Components](https://github.com/styled-components/styled-components): A CSS in JS library that makes it possible to style React components using template literals.
+2. [React Helmet](https://github.com/nfl/react-helmet): A React component that enables you to make changes such as adding SEO metadata to the document head.
+3. [React Icons](https://github.com/react-icons/react-icons): Makes it easy to include popular icons in a React project.
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+## Project Style Guide
 
-## 🧐 What's inside?
+To help ensure code consistency and quality, ESLint was set up and configured to use [AirBnB's official JavaScript Style Guide](https://github.com/airbnb/javascript). 
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+The style guide was added and further configured using `.eslintrc`. The modifications that were made to the style guide were minor and were intentionally done in order to make it easier when working on this project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## Project Styling
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+Styles for this project are mostly written using JavaScript files using the Styled Components library.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+In addition to the styles that were added to React components, the `Layout.css` file was used to configure site wide project styles such as fonts and CSS custom properties. It was also used to apply styles that were difficult to apply using CSS in JS because of nuances surrounding Styled Components.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+The styles that were added to the webpages were mobile-first and have breakpoints that were derived from the responsive breakpoints associated with Bootstrap layouts and interfaces.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+```css
+/* Small devices (portrait phones, less than 576px) */
+/* No media queries are associated with small devices as this is the default style in the project */
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+/* Medium devices (landscape phones, tablets and small desktops 576px and up) */
+@media (min-width: 576px) { /* ... */ }
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { /* ... */ }
+```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+## Deployment
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+This website is currently being deployed in 2 separate locations:
+1. https://kyleknaggs.com/: The official domain for my personal website.
+2. https://kyle-knaggs-personal-website.netlify.app/: A Netlify subdomain assigned to all websites deployed using Netlify.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+Netlify and GitHub have been configured so that any changes that are pushed to this repository will automatically be built and deployed on Netlify. As Netlify is not a Domain Name Registrar, and the https://kyleknaggs.com/ domain was originally purchased through Squarespace and you have to log into your Squarespace account if you want to perform tasks such as modifying DNS configuration when managing this domain.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Google Analytics has been also configured in order to monitor traffic on this webpage.
