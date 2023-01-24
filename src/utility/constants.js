@@ -5,6 +5,10 @@ const HREF = {
   GITHUB: 'https://github.com/kyleknaggs',
   FIREFOX_DEBUGGER: 'https://bugzilla.mozilla.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&classification=Components&component=Debugger&email1=kyleknaggs%40gmail.com&emailassigned_to1=1&emailtype1=exact&list_id=15389168&product=DevTools&query_format=advanced&resolution=---&resolution=FIXED&resolution=INVALID&resolution=WONTFIX&resolution=INACTIVE&resolution=DUPLICATE&resolution=WORKSFORME&resolution=INCOMPLETE&resolution=SUPPORT&resolution=EXPIRED&resolution=MOVED',
   AFL_ONLINE_VIDEO: 'https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1',
+  QGIV: 'https://www.qgiv.com/',
+  QGIV_DONATION_FORM: 'https://www.qgiv.com/donation-forms',
+  QGIV_EVENTS: 'https://www.qgiv.com/events',
+  QGIV_PEER_TO_PEER: 'https://www.qgiv.com/peer-to-peer-fundraising',
 };
 
 const TEXT = {
@@ -64,13 +68,6 @@ const TEXT = {
     THIRD_BULLET: 'Architecting and building the entire view layer of the application, translating mock-ups into responsive React components optimized for both desktop and mobile devices.',
     FOURTH_BULLET: 'Designing and building the front-end of a date picker and a custom pagination component, both of which fetch small, targeted sets of data from the backend API enabling customers and internal users of the application to seamlessly navigate through the thousands of previously placed orders.',
     FIFTH_BULLET: 'Designing and the building the front-end of a modal with a typeahead input field that allows Sales Representatives and other internal users of the application to effortlessly switch between multiple customer accounts.',
-  },
-  WORK_AND_SKILLS: {
-    SELECTED_WORK_PREFIX: 'Selected Work:',
-    SELECTED_WORK_ONLINE_ORDERING_PLATFORM: 'Online Ordering Platform for the largest mattress manufacturer in the Caribbean',
-    SELECTED_WORK_CONJUGATION: 'and',
-    SELECTED_WORK_FIREFOX_DEBUGGER: 'Open Source Contributions to the Firefox Debugger',
-    KEY_SKILLS_PREFIX_AND_DESCRIPTION: 'Key Skills: JavaScript, React, Redux, ES6, Jest, Flow, Git/Mercurial, Bootstrap, Styled-Components, HTML, CSS, Sketch and Adobe Creative Suite.',
   },
 };
 
