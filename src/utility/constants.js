@@ -9,10 +9,6 @@ const HREF = {
 
 const TEXT = {
   // pages directory
-  INDEX: {
-    HERO: 'Kyle Knaggs is a Software Developer from Trinidad and Tobago obsessed with making great user experiences a reality.',
-    BUTTON: 'View Resume',
-  },
   ONLINE_ORDERING_PLATFORM: {
     META_TITLE: 'Kyle Knaggs | Online Ordering Platform',
     META_DESCRIPTION: 'Online ordering platform for the largest mattress and foam manufacturer in the English-speaking Caribbean.',

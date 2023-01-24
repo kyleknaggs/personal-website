@@ -10,7 +10,6 @@ import Section from '../components/Layout/Section';
 import WorkAndSkills from '../components/Text/WorkAndSkills';
 import ButtonLink from '../components/Links/ButtonLink';
 import KyleKnaggsResumePdf from '../assets/2020_kyleKnaggsResume.pdf';
-import { TEXT } from '../utility/constants';
 
 export const query = graphql`
   query HomePageQuery {
@@ -33,12 +32,6 @@ const StyledDiv = styled.div`
 
 export default function Index({ data }) {
   const {
-    INDEX: {
-      HERO,
-      BUTTON,
-    },
-  } = TEXT;
-  const {
     site: {
       siteMetadata: {
         title,
@@ -55,12 +48,12 @@ export default function Index({ data }) {
       />
       <Main>
         <StyledDiv>
-          <H1 text={HERO} />
+          <H1 text="Hello! My name is Kyle Knaggs and I am a software developer obsessed with making great user experiences a reality." />
           <Section>
             <WorkAndSkills />
           </Section>
           <Section>
-            <ButtonLink to={KyleKnaggsResumePdf}>{BUTTON}</ButtonLink>
+            <ButtonLink to={KyleKnaggsResumePdf}>View Resume</ButtonLink>
           </Section>
         </StyledDiv>
       </Main>
