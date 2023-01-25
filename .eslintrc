@@ -13,6 +13,7 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "react/jsx-fragments": 0
+    "react/jsx-fragments": 0,
+    "react/jsx-no-bind": 0
   }
 }
