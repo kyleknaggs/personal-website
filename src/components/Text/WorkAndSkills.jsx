@@ -52,8 +52,8 @@ export default function WorkAndSkills() {
       </StyledP>
       <br />
       <StyledP>
-        Some of the tools I use include HTML, CSS, JavaScript, React,
-        Redux, Jest, Git, SCSS, Styled-Components, NodeJS and MySQL.
+        Some of the tools I use include HTML, CSS, JavaScript, React, Redux,
+        Jest, Git, SCSS, Styled-Components, NodeJS and MySQL.
       </StyledP>
       <br />
       <StyledP>Want to learn more?</StyledP>

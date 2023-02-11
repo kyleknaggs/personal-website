@@ -48,7 +48,7 @@ export default function Index({ data }) {
       />
       <Main>
         <StyledDiv>
-          <H1 text="Hello! My name is Kyle Knaggs and I am a software developer obsessed with making great user experiences a reality." />
+          <H1 text="Hello! My name is Kyle and I am a software developer obsessed with making great user experiences a reality." />
           <Section>
             <WorkAndSkills />
           </Section>
