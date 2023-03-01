@@ -26,7 +26,7 @@ const StyledDiv = styled.div`
   padding 11vw 0vw;
 
   @media (min-width: 1200px) {
-    padding: 6vw 0vw;
+    padding: 0vw 0vw;
   }
 `;
 
