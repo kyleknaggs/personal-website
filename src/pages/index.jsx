@@ -23,11 +23,12 @@ export const query = graphql`
   }
 `;
 
+// Need to give a little breathing room below content on desktop devices
 const StyledDiv = styled.div`
   padding 11vw 0vw;
 
   @media (min-width: 1200px) {
-    padding: 0vw 0vw;
+    padding: 0vw 0vw 3vw;
   }
 `;
 
