@@ -37,7 +37,6 @@ const TEXT = {
   NOT_FOUND: {
     META_TITLE: 'Kyle Knaggs | 404 Page Not Found',
     META_DESCRIPTION: 'Unfortunately the page that you are looking for does not exist.',
-    HERO: 'Oh no! 404 Error. Unfortunately the page that you are looking for does not exist.',
     REASON: 'This is probably because either there is an error in the URL that you entered into the web browser or the page that you are looking for has since been moved or deleted.',
     NEXT_STEPS: 'Please check the URL that you entered into the web browser or return to the',
     HOMEPAGE_LINK: '/',

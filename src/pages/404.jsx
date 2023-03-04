@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/Meta/SEO';
 import Main from '../components/Layout/Main';
+import H1 from '../components/Text/H1';
 import H2 from '../components/Text/H2';
 import Section from '../components/Layout/Section';
 import BodyLink from '../components/Links/BodyLink';
@@ -19,7 +20,6 @@ export default function NotFound() {
     NOT_FOUND: {
       META_TITLE,
       META_DESCRIPTION,
-      HERO,
       REASON,
       NEXT_STEPS,
       HOMEPAGE_LINK,
@@ -35,7 +35,8 @@ export default function NotFound() {
       />
       <Main>
         <StyledDiv>
-          <H2 text={HERO} />
+          <H1 text="Oh no." />
+          <H2 text="404 Error. Unfortunately the page that you are looking for does not exist." />
           <Section>
             <p>{REASON}</p>
             <p>
