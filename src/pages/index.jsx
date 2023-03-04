@@ -6,6 +6,7 @@ import Layout from '../components/Layout/Layout';
 import SEO from '../components/Meta/SEO';
 import Main from '../components/Layout/Main';
 import H2 from '../components/Text/H2';
+import H1 from '../components/Text/H1';
 import Section from '../components/Layout/Section';
 import WorkAndSkills from '../components/Text/WorkAndSkills';
 import ButtonLink from '../components/Links/ButtonLink';
@@ -48,6 +49,7 @@ export default function Index({ data }) {
       />
       <Main>
         <StyledDiv>
+          <H1 text="Hello, I'm Kyle." />
           <H2 text="I am a design focused, detail oriented software developer obsessed with making great user experiences a reality." />
           <Section>
             <WorkAndSkills />
