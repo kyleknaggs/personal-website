@@ -1,11 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/Meta/SEO';
 import Main from '../components/Layout/Main';
 import Video from '../components/Media/Video';
 import Paragraph from '../components/Text/Paragraph';
 import Spacer from '../components/Layout/Spacer';
+import H1 from '../components/Text/H1';
+import H2 from '../components/Text/H2';
 import NotableContributions from '../components/Text/NotableContributions';
 import FullWidthImage from '../components/Media/FullWidthImage';
 import PrecedentImages from '../components/Media/PrecedentImages';
@@ -18,21 +19,11 @@ import PrecedentSiteStudyDiagromImg from '../assets/precedentSiteStudyDiagram.pn
 import HomePageMockupImg from '../assets/homePageMockup.png';
 import { TEXT } from '../utility/constants';
 
-const StyledH1 = styled.h1`
-  font-family: 'Gill Sans Nova Bold';
-  font-size: 16px;
-
-  @media (min-width: 1200px) {
-    font-size: 32px;
-  }
-`;
-
 export default function OnlineOrderingPlatform() {
   const {
     ONLINE_ORDERING_PLATFORM: {
       META_TITLE,
       META_DESCRIPTION,
-      HERO,
       NOTABLE_CONTRIBUTIONS_DESCRIPTION,
       DESCRIPTION,
       ORDER_ENTRY_OLD_DESCRIPTION,
@@ -65,7 +56,10 @@ export default function OnlineOrderingPlatform() {
           </section>
           <section>
             <Spacer />
-            <StyledH1>{HERO}</StyledH1>
+            <H1 text="AFL Online" />
+            <Spacer />
+            <H2 text="The design and development of an online ordering system for the largest mattress and foam manufacturer in the English-speaking Caribbean." />
+            <Spacer />
             <Paragraph text={DESCRIPTION} />
             <Spacer />
             <Paragraph text={NOTABLE_CONTRIBUTIONS_DESCRIPTION} />

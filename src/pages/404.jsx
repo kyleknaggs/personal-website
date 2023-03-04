@@ -35,7 +35,7 @@ export default function NotFound() {
       />
       <Main>
         <StyledDiv>
-          <H1 text="Oh no." />
+          <H1 text="Oh no" />
           <H2 text="404 Error. Unfortunately the page that you are looking for does not exist." />
           <Section>
             <p>{REASON}</p>
