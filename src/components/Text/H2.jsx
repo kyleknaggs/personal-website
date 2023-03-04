@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const StyledH1 = styled.h1`
+const StyledH2 = styled.h2`
   font-size: 36px;
   width: 100%;
 
@@ -15,12 +15,12 @@ const StyledH1 = styled.h1`
   }
 `;
 
-export default function H1({ text }) {
+export default function H2({ text }) {
   return (
-    <StyledH1>{text}</StyledH1>
+    <StyledH2>{text}</StyledH2>
   );
 }
 
-H1.propTypes = {
+H2.propTypes = {
   text: PropTypes.string.isRequired,
 };

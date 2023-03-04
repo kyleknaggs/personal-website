@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/Meta/SEO';
 import Main from '../components/Layout/Main';
-import H1 from '../components/Text/H1';
+import H2 from '../components/Text/H2';
 import Section from '../components/Layout/Section';
 import BodyLink from '../components/Links/BodyLink';
 import { TEXT } from '../utility/constants';
@@ -35,7 +35,7 @@ export default function NotFound() {
       />
       <Main>
         <StyledDiv>
-          <H1 text={HERO} />
+          <H2 text={HERO} />
           <Section>
             <p>{REASON}</p>
             <p>
