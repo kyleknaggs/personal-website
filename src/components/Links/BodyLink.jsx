@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 // Add a hover animation to both types of links on desktop devices. Don't apply
 // this styling to mobile devices as hover styles are not relevant to them
 const StyledA = styled.a`
-box-shadow: inset 0 -1px 0 hsl(0, 0%, 20%);
+  box-shadow: inset 0 -1px 0 hsl(0, 0%, 20%);
   color: hsl(0, 0%, 20%);
   font-family: Gill Sans Nova SemiBold;
   transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -21,6 +21,7 @@ box-shadow: inset 0 -1px 0 hsl(0, 0%, 20%);
 `;
 
 const StyledLink = styled(Link)`
+  box-shadow: inset 0 -1px 0 hsl(0, 0%, 20%)
   color: hsl(0, 0%, 20%);
   font-family: Gill Sans Nova SemiBold;
   transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
