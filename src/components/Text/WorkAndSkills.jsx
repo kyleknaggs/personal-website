@@ -40,7 +40,7 @@ export default function WorkAndSkills() {
         </BodyLink>
         . In addition to this, some of my previous work
         includes the the design and development of an&nbsp;
-        <BodyLink to={HREF.ONLINE_ORDERING_PLATFORM} external>
+        <BodyLink to={HREF.ONLINE_ORDERING_PLATFORM}>
           online ordering platform
         </BodyLink>
         &nbsp;for the largest mattress manufacturer in the Caribbean and&nbsp;
