@@ -21,7 +21,7 @@ const StyledA = styled.a`
 `;
 
 const StyledLink = styled(Link)`
-  box-shadow: inset 0 -1px 0 hsl(0, 0%, 20%)
+  box-shadow: inset 0 -1px 0 hsl(0, 0%, 20%);
   color: hsl(0, 0%, 20%);
   font-family: Gill Sans Nova SemiBold;
   transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
