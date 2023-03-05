@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 // vertically down the page on smaller devices
 const StyledMain = styled.main`
   max-width: 1920px;
-  animation: fadeIn ease-in 5s;
-  -webkit-animation: fadeIn ease-in 5s;
-  -moz-animation: fadeIn ease-in 5s;
-  -o-animation: fadeIn ease-in 5s;
-  -ms-animation: fadeIn ease-in 5s;
+  animation: fadeIn ease-in-out 2.5s;
+  -webkit-animation: fadeIn ease-in-out 2.5s;
+  -moz-animation: fadeIn ease-in-out 2.5s;
+  -o-animation: fadeIn ease-in-out 2.5s;
+  -ms-animation: fadeIn ease-in-out 2.5s;
   min-height: calc(100vh - var(--menu-height-sm));
   padding 6vh 15vw;
 
