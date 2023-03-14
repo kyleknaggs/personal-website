@@ -53,7 +53,7 @@ export default function WorkAndSkills() {
       <br />
       <StyledP>
         Some of the tools I use include HTML, CSS, JavaScript, React, Redux,
-        Jest, Git, SCSS, Styled-Components, NodeJS and MySQL.
+        Jest, Flow, Git, SCSS, Styled-Components, NodeJS, MongoDB and MySQL.
       </StyledP>
       <br />
       <StyledP>Want to learn more?</StyledP>
