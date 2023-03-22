@@ -51,7 +51,7 @@ export default function Index({ data }) {
       <Main>
         <StyledDiv>
           <Section>
-            <H1 text="Hello, I'm Kyle" />
+            <H1 text="Hello! I'm Kyle." />
           </Section>
           <Section>
             <H2 text="I am a design-focused, detail-oriented software developer obsessed with making great user experiences a reality." />
