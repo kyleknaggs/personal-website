@@ -10,7 +10,7 @@ import H1 from '../components/Text/H1';
 import Section from '../components/Layout/Section';
 import WorkAndSkills from '../components/Text/WorkAndSkills';
 import ButtonLink from '../components/Links/ButtonLink';
-import KyleKnaggsResumePdf from '../assets/2023_kyleKnaggsResume.pdf';
+import KyleKnaggsResumePdf from '../assets/2024_kyleKnaggsResume.pdf';
 
 export const query = graphql`
   query HomePageQuery {
