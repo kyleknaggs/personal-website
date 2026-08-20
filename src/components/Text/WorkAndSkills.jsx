@@ -50,12 +50,13 @@ export default function WorkAndSkills() {
           open-source contributions
         </BodyLink>
         &nbsp;to the Firefox Debugger.
-        <StyledP>
-          I primarily work with TypeScript, JavaScript, and React, with a
-          strong focus on thoughtful UI implementation, maintainability, and code quality.
-        </StyledP>
-        <br />
-        <StyledP>Want to learn more?</StyledP>
+      </StyledP>
+      <StyledP>
+        I primarily work with TypeScript, JavaScript, and React, with a
+        strong focus on thoughtful UI implementation, maintainability, and code quality.
+      </StyledP>
+      <br />
+      <StyledP>Want to learn more?</StyledP>
     </Fragment>
   );
 }
