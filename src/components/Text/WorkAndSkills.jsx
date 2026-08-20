@@ -24,18 +24,18 @@ export default function WorkAndSkills() {
     <Fragment>
       <StyledP>
         As a Senior Software Engineer at&nbsp;
-        <BodyLink to={HREF.QGIV} external>Bloomerang</BodyLink>
+        <BodyLink to={HREF.BLOOMERANG} external>Bloomerang</BodyLink>
         , I build and maintain experiences across its fundraising products,
         including an&nbsp;
-        <BodyLink to={HREF.QGIV_DONATION_FORM} external>
+        <BodyLink to={HREF.BLOOMERANG_DONATION_FORM} external>
           online donation form
         </BodyLink>
         , a&nbsp;
-        <BodyLink to={HREF.QGIV_PEER_TO_PEER} external>
+        <BodyLink to={HREF.BLOOMERANG_PEER_TO_PEER} external>
           peer-to-peer fundraising platform
         </BodyLink>
         &nbsp;and an&nbsp;
-        <BodyLink to={HREF.QGIV_EVENTS} external>
+        <BodyLink to={HREF.BLOOMERANG_EVENTS} external>
           event registration platform
         </BodyLink>
         . My work spans customer-facing interfaces, front-end architecture and

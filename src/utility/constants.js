@@ -5,10 +5,11 @@ const HREF = {
   GITHUB: 'https://github.com/kyleknaggs',
   FIREFOX_DEBUGGER: 'https://bugzilla.mozilla.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&classification=Components&component=Debugger&email1=kyleknaggs%40gmail.com&emailassigned_to1=1&emailtype1=exact&list_id=15389168&product=DevTools&query_format=advanced&resolution=---&resolution=FIXED&resolution=INVALID&resolution=WONTFIX&resolution=INACTIVE&resolution=DUPLICATE&resolution=WORKSFORME&resolution=INCOMPLETE&resolution=SUPPORT&resolution=EXPIRED&resolution=MOVED',
   AFL_ONLINE_VIDEO: 'https://player.vimeo.com/video/455057785?app_id=122963&amp;wmode=opaque&amp;autoplay=1',
-  QGIV: 'https://www.qgiv.com/',
-  QGIV_DONATION_FORM: 'https://www.qgiv.com/donation-forms',
-  QGIV_EVENTS: 'https://www.qgiv.com/events',
-  QGIV_PEER_TO_PEER: 'https://www.qgiv.com/peer-to-peer-fundraising',
+  BLOOMERANG: 'https://bloomerang.com',
+  // Apparently these pages are still hosted on the Qgiv domain
+  BLOOMERANG_DONATION_FORM: 'https://www.qgiv.com/donation-forms',
+  BLOOMERANG_EVENTS: 'https://www.qgiv.com/events',
+  BLOOMERANG_PEER_TO_PEER: 'https://www.qgiv.com/peer-to-peer-fundraising',
 };
 
 const TEXT = {
