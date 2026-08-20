@@ -40,6 +40,9 @@ export default function WorkAndSkills() {
         </BodyLink>
         . My work spans customer-facing interfaces, front-end architecture and
         the tools nonprofits use to customize their fundraising experiences.
+      </StyledP>
+      <br />
+      <StyledP>
         Previously, I was responsible for the design and development of an&nbsp;
         <BodyLink to={HREF.ONLINE_ORDERING_PLATFORM}>
           online ordering platform
@@ -51,6 +54,7 @@ export default function WorkAndSkills() {
         </BodyLink>
         &nbsp;to the Firefox Debugger.
       </StyledP>
+      <br />
       <StyledP>
         I primarily work with TypeScript, JavaScript, and React, with a
         strong focus on thoughtful UI implementation, maintainability, and code quality.
