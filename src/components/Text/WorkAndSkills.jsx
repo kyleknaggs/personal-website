@@ -23,10 +23,10 @@ export default function WorkAndSkills() {
   return (
     <Fragment>
       <StyledP>
-        As a Front-End Engineer at&nbsp;
-        <BodyLink to={HREF.QGIV} external>Qgiv</BodyLink>
-        , I help non-profits raise money
-        online through a suite of fundraising tools that include an&nbsp;
+        As a Senior Software Engineer at&nbsp;
+        <BodyLink to={HREF.QGIV} external>Bloomerang</BodyLink>
+        , I build and maintain experiences across its fundraising products,
+        including an&nbsp;
         <BodyLink to={HREF.QGIV_DONATION_FORM} external>
           online donation form
         </BodyLink>
@@ -38,25 +38,24 @@ export default function WorkAndSkills() {
         <BodyLink to={HREF.QGIV_EVENTS} external>
           event registration platform
         </BodyLink>
-        . In addition to this, some of my previous work
-        includes the the design and development of an&nbsp;
+        . My work spans customer-facing interfaces, front-end architecture and
+        the tools nonprofits use to customize their fundraising experiences.
+        Previously, I was responsible for the design and development of an&nbsp;
         <BodyLink to={HREF.ONLINE_ORDERING_PLATFORM}>
           online ordering platform
         </BodyLink>
-        &nbsp;for the largest mattress manufacturer in the Caribbean and&nbsp;
+        &nbsp;for the largest mattress manufacturer in the Caribbean, and I’ve
+        also made&nbsp;
         <BodyLink to={HREF.FIREFOX_DEBUGGER} external>
-          open source contributions
+          open-source contributions
         </BodyLink>
-        &nbsp;
-        to the Firefox Debugger.
-      </StyledP>
-      <br />
-      <StyledP>
-        Some of the tools I use include HTML, CSS, JavaScript, React, Redux,
-        Jest, Flow, Git, SCSS, Styled-Components, NodeJS, Express and MongoDB.
-      </StyledP>
-      <br />
-      <StyledP>Want to learn more?</StyledP>
+        &nbsp;to the Firefox Debugger.
+        <StyledP>
+          I primarily work with TypeScript, JavaScript, and React, with a
+          strong focus on thoughtful UI implementation, maintainability, and code quality.
+        </StyledP>
+        <br />
+        <StyledP>Want to learn more?</StyledP>
     </Fragment>
   );
 }

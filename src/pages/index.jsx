@@ -54,7 +54,7 @@ export default function Index({ data }) {
             <H1 text="Hello! I'm Kyle." />
           </Section>
           <Section>
-            <H2 text="I am a design-focused, detail-oriented software developer obsessed with making great user experiences a reality." />
+            <H2 text="I am a design-focused, detail-oriented software engineer who cares deeply about creating thoughtful, polished user experiences." />
           </Section>
           <Section>
             <WorkAndSkills />
