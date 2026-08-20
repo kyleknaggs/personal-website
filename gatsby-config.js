@@ -20,8 +20,8 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'Kyle Knaggs | Software Developer',
-    description: 'A design-focused, detail-oriented software developer obsessed with making great user experiences a reality',
+    title: 'Kyle Knaggs | Software Engineer',
+    description: 'I am a design-focused, detail-oriented software engineer who cares deeply about creating thoughtful, polished user experiences.',
     url: 'https://kyleknaggs.com/',
   },
 };
